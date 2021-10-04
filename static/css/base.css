@@ -6690,7 +6690,6 @@ textarea.form-control-lg {
 }
 
 .fixed-top {
-  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -11491,7 +11490,6 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -11549,7 +11547,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background:url('/media/hero-image.png') no-repeat center center fixed;
+  background:url('/media/hero-image-crop.png') no-repeat center center fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11559,16 +11557,16 @@ body {
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: -7px !important;
-  font-size:12rem !important;
+  font-size:10rem !important;
 }
 
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
-  font-size: 1.7rem !important;
+  font-size: 1.9rem !important;
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing:7px;
-  line-height:6rem;
+  line-height:10rem;
 }
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
