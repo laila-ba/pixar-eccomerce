@@ -1,0 +1,34 @@
+[
+    {
+       "pk":1,
+       "model":"products.category",
+       "fields":{
+          "name":"toys",
+          "friendly_name":"Toys"
+       }
+    },
+    {
+       "pk":2,
+       "model":"products.category",
+       "fields":{
+          "name":"clothes",
+          "friendly_name":"Tshirts & Clothing"
+       }
+    },
+    {
+       "pk":3,
+       "model":"products.category",
+       "fields":{
+          "name":"accessories",
+          "friendly_name":"accessories"
+       }
+    },
+    {
+       "pk":4,
+       "model":"products.category",
+       "fields":{
+          "name":"homewear",
+          "friendly_name":"Homewear"
+       }
+    }
+ ]
