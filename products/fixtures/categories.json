@@ -12,23 +12,23 @@
        "model":"products.category",
        "fields":{
           "name":"clothes",
-          "friendly_name":"Tshirts & Clothing"
+          "friendly_name":"Clothing"
        }
     },
     {
        "pk":3,
        "model":"products.category",
        "fields":{
-          "name":"accessories",
-          "friendly_name":"accessories"
+          "name":"adults",
+          "friendly_name":"Adults"
        }
     },
     {
        "pk":4,
        "model":"products.category",
        "fields":{
-          "name":"homewear",
-          "friendly_name":"Homewear"
+          "name":"homeware",
+          "friendly_name":"Homeware"
        }
     }
  ]
