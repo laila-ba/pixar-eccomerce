@@ -312,11 +312,7 @@
       "fields": {
          "sku": "pp5003360384",
          "name": "Disney Pixar's Up Russell Mug",
-         "description": "Get your mornings off to a soaring start with this sculpted
-         Russell Mug, inspired by Disney and Pixar's Up. With colorful
-         artwork of balloons sending the young Wilderness Explorer and
-         Carl Fredricksen's house airborne, this mug will elevate your
-         everyday!",
+         "description": "Get your mornings off to a soaring start with this sculpted Russell Mug, inspired by Disney and Pixar's Up. With colorful artwork of balloons sending the young Wilderness Explorer and Carl Fredricksen's house airborne, this mug will elevate your everyday!",
          "price": 19.99,
          "category": 4,
          "rating": 4.8,
@@ -841,5 +837,5 @@
          "image_url": "https://m.media-amazon.com/images/I/A13usaonutL._CLa%7C2140%2C2000%7C7141o4wchjL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UL1500_.png",
          "image": "tshirt15.jpg"
       }
-   },
+   }
 ]
