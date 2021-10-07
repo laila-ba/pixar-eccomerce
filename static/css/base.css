@@ -1375,7 +1375,7 @@ progress {
 
   .col-lg-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 60%;
   }
 
   .col-lg-5 {
@@ -4136,13 +4136,12 @@ textarea.form-control-lg {
   justify-content: space-between;
 }
 .navbar-brand {
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 10rem;
-  z-index: 111;
-  text-decoration: none;
-  white-space: nowrap;
+  padding: 3rem 0;
+  width:15em;
+  height:4em;
+  background: url("/media/logo.png");
+  background-repeat:no-repeat;
+  background-position: center;
 }
 .navbar-nav {
   display: flex;
@@ -7611,7 +7610,7 @@ textarea.form-control-lg {
 }
 
 .py-1 {
-  padding-top: 0.25rem !important;
+  padding-top: 2rem !important;
   padding-bottom: 0.25rem !important;
 }
 
@@ -9929,7 +9928,7 @@ textarea.form-control-lg {
   }
 
   .py-lg-0 {
-    padding-top: 0 !important;
+    padding-top: 2rem !important;
     padding-bottom: 0 !important;
   }
 
@@ -11458,17 +11457,10 @@ body {
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    background: url("/media/logo.png") !important;
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-  }
-  #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
-  }
-  #mainNav .nav-link:active {
-    color: #fff;
   }
   #mainNav.navbar-shrink {
     background-color: #fff;
