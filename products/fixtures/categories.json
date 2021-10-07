@@ -22,13 +22,5 @@
           "name":"adults",
           "friendly_name":"Adults"
        }
-    },
-    {
-       "pk":4,
-       "model":"products.category",
-       "fields":{
-          "name":"homeware",
-          "friendly_name":"Homeware"
-       }
     }
  ]
