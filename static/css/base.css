@@ -1373,11 +1373,6 @@ progress {
     width: 25%;
   }
 
-  .col-lg-4 {
-    flex: 0 0 auto;
-    width: 60%;
-  }
-
   .col-lg-5 {
     flex: 0 0 auto;
     width: 41.66666667%;
@@ -4113,7 +4108,6 @@ textarea.form-control-lg {
 .tab-content > .active {
   display: block;
 }
-
 .navbar {
   position: relative;
   display: flex;
@@ -5102,6 +5096,9 @@ textarea.form-control-lg {
 }
 .alert-white .alert-link {
   color: #7a7a7a;
+}
+.laptop img{
+  height:450px;
 }
 
 @-webkit-keyframes progress-bar-stripes {

@@ -40,7 +40,21 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">HOME</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">DISCOVER</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'products' %}">BUY</a></li>
+                        <div class="collapse navbar-collapse" id="main-nav">
+                            <ul class="navbar-nav w-auto mx-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        BUY
+                                    </a>
+                                    <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                                        <a href="" class="dropdown-item">Toys</a>
+                                        <a href="" class="dropdown-item ">Clothing</a>
+                                        <a href="" class="dropdown-item ">Adults</a>
+                                        <a href="{% url 'products' %}" class="dropdown-item">SHOP</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                             <li class="list-inline-item dropdown">
                                 <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <p class="my-0">MY ACCOUNT</p>
