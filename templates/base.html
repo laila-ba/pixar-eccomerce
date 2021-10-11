@@ -2,97 +2,107 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        {% block meta %}
-            <meta charset="utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <meta name="description" content="" />
-            <meta name="author" content="" />
-        {% endblock %}
 
-            <title>Pixar Animation Studios</title>
-            <link rel="icon" type="image/x-icon" img src="/media/lamp.png" />
+<head>
+    {% block meta %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    {% endblock %}
 
-        {% block corejs %}
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
-            <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-            <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-            <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        {% endblock %}
+    <title>Pixar Animation Studios</title>
+    <link rel="icon" type="image/x-icon" img src="/media/lamp.png" />
 
-        {% block corecss %}
-            <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        {% endblock %}
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="{% url 'home' %}" id="#page-top" ></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">HOME</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">DISCOVER</a></li>
-                        <div class="collapse navbar-collapse" id="main-nav">
-                            <ul class="navbar-nav w-auto mx-auto">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        BUY
-                                    </a>
-                                    <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                                        <a href="" class="dropdown-item">Toys</a>
-                                        <a href="" class="dropdown-item ">Clothing</a>
-                                        <a href="" class="dropdown-item ">Adults</a>
-                                        <a href="{% url 'products' %}" class="dropdown-item">SHOP</a>
-                                    </div>
-                                </li>
-                            </ul>
+    {% block corejs %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+    {% endblock %}
+
+    {% block corecss %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    
+    {% endblock %}
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="{% url 'home' %}" id="#page-top"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- EXAMPLE -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Discover</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{% url 'products' %}" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" style ="font-family: Josefin-sans; letter-spacing: 2px; font-size: 0.8rem;font-weight:700;" href="#">Toys</a></li>
+                            <li><a class="dropdown-item" style ="font-family: Josefin-sans;letter-spacing: 2px; font-size: 0.8rem;font-weight:700;" href="#">Clothing</a></li>
+                            <li><a class="dropdown-item" style ="font-family: Josefin-sans; letter-spacing: 2px; font-size: 0.8rem;font-weight:700;" href="#">Adults</a></li>
+                            <li><a class="dropdown-item" style ="font-family: Josefin-sans; letter-spacing: 2x; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}">All Products</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          My Account
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                        <a href="" style ="font-family: Josefin-sans;letter-spacing: 2px; font-size: 0.8rem; font-weight:700;" class="dropdown-item">Product Management</a>
+                        {% endif %}
+                        <a href="" class="dropdown-item"style ="font-family: Josefin-sans;" >My Profile</a>
+                        <a href="{% url 'account_logout' %}" class="dropdown-item" style ="font-family: Josefin-sans;letter-spacing: 2px; font-size: 0.8rem; font-weight:700;">Logout</a>
+                        {% else %}
+                        <a href="{% url 'account_signup' %}" class="dropdown-item" style ="font-family: Josefin-sans;letter-spacing: 2px; font-size: 0.8rem; font-weight:700;">Register</a>
+                        <a href="{% url 'account_login' %}" class="dropdown-item"style ="font-family: Josefin-sans;letter-spacing: 2px; font-size: 0.8rem;font-weight:700;">Login</a>
+                        {% endif %}
+                      </ul>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                        href="">
+                        <div class="text-center">
+                            <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                            <p class="my-0">
+                                {% if grand_total %}
+                                ${{ grand_total|floatformat:2 }}
+                                {% else %}
+                                $0.00
+                                {% endif %}
+                            </p>
                         </div>
-                            <li class="list-inline-item dropdown">
-                                <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <p class="my-0">MY ACCOUNT</p>
-                                </a>
-                                <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                                    {% if request.user.is_authenticated %}
-                                        {% if request.user.is_superuser %}
-                                            <a href="" class="dropdown-item">Product Management</a>
-                                        {% endif %}
-                                        <a href="" class="dropdown-item">My Profile</a>
-                                        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                                    {% else %}
-                                        <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                        <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                                    {% endif %}
-                                </div>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
-                                    <div class="text-center">
-                                        <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                        <p class="my-0">
-                                            {% if grand_total %}
-                                                ${{ grand_total|floatformat:2 }}
-                                            {% else %}
-                                                $0.00
-                                            {% endif %}
-                                        </p>
-                                    </div>
-                                </a>
-                            </li> 
-                    </ul>
-                </div>
+                    </a>
+                </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+
 
     {% if messages %}
-        <div class="message-container"></div>
+    <div class="message-container"></div>
     {% endif %}
 
     {% block page_header %}
@@ -106,33 +116,34 @@
 
     <footer class="text-center text-lg-start" style="background-color: #fff;">
         <div class="container d-flex justify-content-center py-5">
-          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #000;">
-            <i class="fab fa-facebook-f"></i>
-          </button>
-          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #000;">
-            <i class="fab fa-youtube"></i>
-          </button>
-          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #000;">
-            <i class="fab fa-instagram"></i>
-          </button>
-          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #000;">
-            <i class="fab fa-twitter"></i>
-          </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #000;">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #000;">
+                <i class="fab fa-youtube"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #000;">
+                <i class="fab fa-instagram"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #000;">
+                <i class="fab fa-twitter"></i>
+            </button>
         </div>
-    
+
         <!-- Copyright -->
         <div class="text-center p-3" style="color: #000; font-family: 'Josefin Sans', sans-serif;">
-          © 2021 DISNEY / PIXAR
+            © 2021 DISNEY / PIXAR
         </div>
         <!-- Copyright -->
-      </footer>
-      
-    
+    </footer>
+
+
     {% endblock %}
 
     {% block postloadjs %}
     {% endblock %}
 
-   
-    </body>
+
+</body>
+
 </html>

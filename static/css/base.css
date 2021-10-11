@@ -5097,9 +5097,6 @@ textarea.form-control-lg {
 .alert-white .alert-link {
   color: #7a7a7a;
 }
-.laptop img{
-  height:450px;
-}
 
 @-webkit-keyframes progress-bar-stripes {
   0% {
@@ -7448,7 +7445,7 @@ textarea.form-control-lg {
 }
 
 .mt-3 {
-  margin-top: 1rem !important;
+  margin-top: 10rem !important;
 }
 
 .mt-4 {
@@ -11520,10 +11517,9 @@ body {
 .masthead {
   position: relative;
   width: 100%;
-  height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background:url('/media/hero-image-crop.png') no-repeat center center fixed;
+  background:url('/media/hero-image.png') no-repeat center center fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11535,7 +11531,7 @@ body {
   letter-spacing: 14px !important;
 }
 .content-section {
-  padding-top: 7.5rem;
+  padding-top: 4rem;
   padding-bottom: 7.5rem;
 }
 .portfolio-item {
