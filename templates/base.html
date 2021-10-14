@@ -56,9 +56,9 @@
                             Shop
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" style ="font-family: Josefin-sans; letter-spacing: 2px; font-size: 0.8rem;font-weight:700;" href="#">Toys</a></li>
-                            <li><a class="dropdown-item" style ="font-family: Josefin-sans;letter-spacing: 2px; font-size: 0.8rem;font-weight:700;" href="#">Clothing</a></li>
-                            <li><a class="dropdown-item" style ="font-family: Josefin-sans; letter-spacing: 2px; font-size: 0.8rem;font-weight:700;" href="#">Adults</a></li>
+                            <li><a class="dropdown-item" style ="font-family: Josefin-sans; letter-spacing: 2px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}?category=toys">Toys</a></li>
+                            <li><a class="dropdown-item" style ="font-family: Josefin-sans;letter-spacing: 2px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}?category=clothes">Clothing</a></li>
+                            <li><a class="dropdown-item" style ="font-family: Josefin-sans; letter-spacing: 2px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}?category=adults">Adults</a></li>
                             <li><a class="dropdown-item" style ="font-family: Josefin-sans; letter-spacing: 2x; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}">All Products</a></li>
                         </ul>
                     </li>
