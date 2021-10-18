@@ -122,6 +122,9 @@ body {
     background: #222;
     color: white;
 }
+#bag{
+  margin-top:5rem;
+}
 hr {
   margin: 1rem 0;
   color: inherit;
