@@ -12,15 +12,14 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container mb-2">
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4">Shopping Bag</h2>
-                <hr>
-            </div>
-        </div>
-
         <div class="row" id="bag">
+            <div class="row">
+                <div class="col">
+                    <hr>
+                    <h2 class="text-center mx-auto my-0 text-uppercase" style="font-family: Josephine-sans, sans-serif; letter-spacing: 1rem; font-size: 2rem; font-weight:700;">My Bag</h2>
+                    <hr>
+                </div>
+            </div>
             <div class="col">
                 {% if bag_items %}
                     <div class="table-responsive rounded">
@@ -69,13 +68,13 @@
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
-                                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                                    <a href="{% url 'products' %}" class="btn btn-outline-primary">
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
-                                        <span class="text-uppercase">Keep Shopping</span>
+                                        <span class="text-uppercase ">Keep Shopping</span>
                                     </a>
-                                    <a href="" class="btn btn-black rounded-0 btn-lg">
+                                    <a href="" class="btn btn-outline-primary" style="color: #fff !important; background-color: #0d6efd !important; border-color:#fff !important;">
                                         <span class="text-uppercase">Secure Checkout</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>

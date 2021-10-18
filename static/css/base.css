@@ -81,7 +81,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: Josephine-sans, sans-serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -123,7 +123,7 @@ body {
     color: white;
 }
 #bag{
-  margin-top:5rem;
+  margin-top:10rem;
 }
 hr {
   margin: 1rem 0;
