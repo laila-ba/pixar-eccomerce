@@ -46,8 +46,15 @@
                     <li class="nav-item">
                         <a class="nav-link" style="color: #000;" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: #000;" href="#">Discover</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #000;" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Discover
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'films' %}">Feature Films</a></li>
+                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'shorts' %}">Shorts</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" style="color: #000;" href="{% url 'products' %}" id="navbarDropdownMenuLink" role="button"
@@ -55,10 +62,10 @@
                             Shop
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" style ="font-family: Josefin-sans; letter-spacing: 2px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}?category=toys">Toys</a></li>
-                            <li><a class="dropdown-item" style ="font-family: Josefin-sans;letter-spacing: 2px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}?category=clothes">Clothing</a></li>
-                            <li><a class="dropdown-item" style ="font-family: Josefin-sans; letter-spacing: 2px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}?category=adults">Adults</a></li>
-                            <li><a class="dropdown-item" style ="font-family: Josefin-sans; letter-spacing: 2x; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}">All Products</a></li>
+                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}?category=toys">Toys</a></li>
+                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}?category=clothes">Clothing</a></li>
+                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}?category=adults">Adults</a></li>
+                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}">All Products</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -72,10 +79,10 @@
                         <a href="" style ="font-family: Josefin-sans;letter-spacing: 2px; font-size: 0.8rem; font-weight:700;" class="dropdown-item">Product Management</a>
                         {% endif %}
                         <a href="" class="dropdown-item"style ="font-family: Josefin-sans;" >My Profile</a>
-                        <a href="{% url 'account_logout' %}" class="dropdown-item" style ="font-family: Josefin-sans;letter-spacing: 2px; font-size: 0.8rem; font-weight:700;">Logout</a>
+                        <a href="{% url 'account_logout' %}" class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;">Logout</a>
                         {% else %}
-                        <a href="{% url 'account_signup' %}" class="dropdown-item" style ="font-family: Josefin-sans;letter-spacing: 2px; font-size: 0.8rem; font-weight:700;">Register</a>
-                        <a href="{% url 'account_login' %}" class="dropdown-item"style ="font-family: Josefin-sans;letter-spacing: 2px; font-size: 0.8rem;font-weight:700;">Login</a>
+                        <a href="{% url 'account_signup' %}" class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;">Register</a>
+                        <a href="{% url 'account_login' %}" class="dropdown-item"style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;">Login</a>
                         {% endif %}
                       </ul>
                   </li>

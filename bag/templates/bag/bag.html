@@ -10,18 +10,17 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
     <div class="container mb-2">
         <div class="row" id="bag">
-            <div class="row">
-                <div class="col">
-                    <hr>
-                    <h2 class="text-center mx-auto my-0 text-uppercase" style="font-family: Josephine-sans, sans-serif; letter-spacing: 1rem; font-size: 2rem; font-weight:700;">My Bag</h2>
-                    <hr>
-                </div>
-            </div>
             <div class="col">
                 {% if bag_items %}
+                <div class="row">
+                    <div class="col">
+                        <hr>
+                        <h2 class="text-center mx-auto my-0 text-uppercase" style="font-family: Josephine-sans, sans-serif; letter-spacing: 1rem; font-size: 2rem; font-weight:700;">My Bag</h2>
+                        <hr>
+                    </div>
+                </div>
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
@@ -86,12 +85,10 @@
                         </table>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Keep Shopping</span>
+                    <img class=" img-fluid rounded mx-auto d-block" src="/media/boo.png" alt="boo" />
+                    <p class="text-center "style="font-family: sans-serif;  font-size: 2rem; font-weight:700;">Your bag is empty.</p>
+                    <a href="{% url 'products' %}" class="justify-content-center btn btn-outline-primary " style="color: #fff !important; font-size: 1.5rem;background-color: #0d6efd !important; border-color:#fff !important;">
+                        <span class="text-uppercase ">Keep Shopping</span>
                     </a>
                 {% endif %}
             </div>
