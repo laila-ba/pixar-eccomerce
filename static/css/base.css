@@ -125,6 +125,11 @@ body {
 #bag{
   margin-top:10rem;
 }
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
 #products{
   margin-top: 2rem;
 }
