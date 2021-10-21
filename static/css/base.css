@@ -11551,7 +11551,7 @@ body {
   width: 100%;
   min-height: 35rem;
   padding: 15rem 0;
-  background:url('/media/bao.jpg') no-repeat center center fixed;
+  background:url('/media/baoo.jpeg') no-repeat center center fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11569,11 +11569,10 @@ body {
   background-attachment: scroll;
   background-size: cover;
 }
-.masthead3 h1, .masthead3 .h1 {
+.masthead3 h1{
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 1rem !important;
-  font-size:3rem !important;
 }
 .masthead3 h2 {
   color: #fff;
