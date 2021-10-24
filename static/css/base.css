@@ -132,6 +132,7 @@ body {
 }
 #products{
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 hr {
@@ -11695,8 +11696,8 @@ body {
   text-transform: uppercase;
   color: #000;
   font-family: 'Josefin Sans', sans-serif;
-  letter-spacing: 10px;
-  font-size:2rem;
+  letter-spacing: 6px;
+  font-size:1rem;
 }
 
 .masthead h2, .masthead .h2 {
@@ -11713,6 +11714,12 @@ body {
   }
   .masthead2 h1,.masthead3 h1,.masthead4 h1{
   font-size:4rem !important;
+  }
+  .message-container {
+    position: fixed;
+    top: 72px;
+    right: 12rem;
+    z-index: 99999999999;
   }
 }
 @media (min-width: 992px) {
@@ -11844,17 +11851,6 @@ body {
 .btt-link {
   cursor: pointer;
 }
-/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
-.arrow-up {
-  width: 0; 
-  height: 0; 
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent; 
-  border-bottom: 10px solid black;
-  position: absolute;
-  top: -10px;
-  right: 36px;
-}
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
@@ -11895,7 +11891,7 @@ body {
   overflow-y: auto;
 }
 .bag-notification-wrapper {
-  height: 100px;
-  overflow-x: hidden;
-  overflow-y: auto;
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
