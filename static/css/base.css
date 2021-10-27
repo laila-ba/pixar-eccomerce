@@ -11541,6 +11541,61 @@ body {
   letter-spacing: 0.15rem;
   border-radius:0;
 }
+.masthead9{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/i2-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead8{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/toy4-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead7{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/onward-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead6{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/soul-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead5{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/luca-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
 .masthead4{
   position: relative;
   width: 100%;
@@ -11717,7 +11772,7 @@ body {
   }
 }
 @media (min-width: 992px) {
-  .masthead, .masthead2,.masthead3,.masthead4 {
+  .masthead, .masthead2,.masthead3,.masthead4,.masthead5 {
     height: 100vh;
     padding: 0;
   }
@@ -12058,4 +12113,14 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+
+footer{
+  display: table;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  bottom:0;
+  width:100%;
+  height:60px;   /* Height of the footer */
 }
