@@ -15,10 +15,11 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
+<div class="background2">
+    <div class="container" id="card">
         <div class="row" style="margin-top: 9rem;">
             <div class="col">
-                <h2 class="text-center logo-font mb-4" style="font-size:2rem;">Checkout</h2>
+                <h2 class="text-center logo-font mb-4" style="font-size:2rem;margin-top: 2rem;">Checkout</h2>
                 <hr>
             </div>
         </div>
@@ -107,14 +108,14 @@
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                     </fieldset>
 
-                    <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0">
+                    <div class="text-center submit-button t mt-5 mb-2">                    
+						<a href="{% url 'view_bag' %}" class="btn btn-outline-primary"style="border-radius:50px;">
 							<span class="icon">
 								<i class="fas fa-chevron-left"></i>
 							</span>
 							<span class="font-weight-bold">Adjust Bag</span>
 						</a>
-						<button id="submit-button" class="btn btn-black rounded-0">
+						<button id="submit-button" class="btn btn-outline-primary"style="color: #fff !important; background-color: #0d6efd !important; border-color:#fff !important;border-radius:50px;">
 							<span class="font-weight-bold">Complete Order</span>
 							<span class="icon">
 								<i class="fas fa-lock"></i>
@@ -131,6 +132,7 @@
             </div>
         </div>
     </div>
+</div>
 
 {% endblock %}
 

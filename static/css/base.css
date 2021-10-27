@@ -92,17 +92,9 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   display: grid;
   place-items: center;
-}
-.btn-black {
-  background: black;
-  color: white;
+  --col-deepblue: #4478e3;
 }
 
-.btn-outline-black {
-  background: white;
-  color: black !important; /* use important to override link colors for <a> elements */
-  border: 1px solid black;
-}
 #detail{
   margin-top:5rem;
 }
@@ -12041,4 +12033,29 @@ body {
   top:10%;
   left:4%;  
   background-color:#fff;
+}
+#card{
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background: #ffffff;
+}
+.background{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  background:url('/media/bag.png') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.background2{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  background:url('/media/checkout.png') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
