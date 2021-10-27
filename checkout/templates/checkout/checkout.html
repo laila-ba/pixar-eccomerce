@@ -15,7 +15,6 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
     <div class="container">
         <div class="row" style="margin-top: 9rem;">
             <div class="col">
@@ -23,7 +22,6 @@
                 <hr>
             </div>
         </div>
-
         <div class="row" >
             <div class="col-12 col-lg-6 order-lg-last mb-5" id="checkout">
                 <p class="text-muted">Order Summary ({{ product_count }})</p>
@@ -70,7 +68,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6"id="checkout">
                 <p class="text-muted">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
@@ -133,6 +131,7 @@
             </div>
         </div>
     </div>
+
 {% endblock %}
 
 {% block postloadjs %}
