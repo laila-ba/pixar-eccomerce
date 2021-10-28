@@ -11541,6 +11541,215 @@ body {
   letter-spacing: 0.15rem;
   border-radius:0;
 }
+.masthead28{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/toy-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead27{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/bug-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead26{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/toy2-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead25{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/monsters-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead24{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/nemo-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead23{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/incredibles-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead22{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/cars-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead21{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/rat-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead20{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/walle-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead19{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/up-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead18{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/toy3-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead17{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/cars2-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead16{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/brave-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead15{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/mu-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead14{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/io-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead13{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/dino-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead12{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/dory-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead11{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/cars3-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead10{
+  position: relative;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background:url('/media/coco-hero.jpg') no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
 .masthead9{
   position: relative;
   width: 100%;
@@ -11772,7 +11981,7 @@ body {
   }
 }
 @media (min-width: 992px) {
-  .masthead, .masthead2,.masthead3,.masthead4,.masthead5 {
+  .masthead, .masthead2,.masthead3,.masthead4,.masthead5,.masthead6,.masthead7,.masthead8,.masthead9,.masthead10,.masthead11,.masthead12,.masthead13,.masthead14,.masthead15,.masthead16,.masthead17,.masthead18,.masthead19,.masthead20,.masthead21,.masthead22,.masthead23,.masthead24,.masthead25,.masthead26,.masthead27,.masthead28{
     height: 100vh;
     padding: 0;
   }
