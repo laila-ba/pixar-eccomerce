@@ -5,9 +5,6 @@
 <header class="masthead4">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
-            <div class="text-center">
-                <h1 class="mx-auto text-uppercase" style="margin-top:10rem;">Shorts</h1>
-            </div>
         </div>
     </div>
 </header>
@@ -18,91 +15,46 @@
   <div class = "row">
     <div class="d-flex justify-content-around " style="margin-top:5rem;">
           <div class="text-center col-sm">
-            <img src="/media/Andre_Wally.jpg" class="img-fluid" style="width:70%;" alt="Andre Wally">
+            <a href="{% url 'lava' %}"><img src="/media/lava.jpg" class="img-fluid" style="width:70%;" alt="umbrella"></a> 
           </div>
           <div class="text-center col-sm">
-            <a href="{% url 'bao' %}"><img src="/media/bau_poster.jpg" class="img-fluid" style="width:70%;" alt="luca"></a>
+            <a href="{% url 'bao' %}"><img src="/media/bau_poster.jpg" class="img-fluid" style="width:70%;" alt="bao"></a>
           </div>
           <div class="text-center col-sm">
-            <img src="/media/birds.jpg" class="img-fluid" style="width:70%;"alt="birds">
+            <a href="{% url 'burrow' %}"><img src="/media/burrow_poster_2020.jpg" class="img-fluid" style="width:70%;" alt="burrow"></a> 
           </div>
       </div>
   </div>
   <div class = "row">
     <div class="d-flex justify-content-around" style="margin-top:5rem;">
-      <div class="text-center col-sm">
-        <img src="/media/blue_umbrella.jpg" class="img-fluid" style="width:70%;"alt="blue umbrella">
+      <div class="text-center col3">
+        <a href="{% url 'cloudy' %}"><img src="/media/cloudy.jpg" class="img-fluid" style="width:70%;" alt="cloudy"></a>
       </div>
-      <div class="text-center col-sm">
-        <img src="/media/boundin.jpg" class="img-fluid" style="width:70%;"alt="boudin">
+      <div class="text-center col3">
+        <a href="{% url 'day' %}"><img src="/media/day_night.jpg" class="img-fluid" style="width:70%;" alt="day"></a>
       </div>
-      <div class="text-center col-sm">
-        <img src="/media/burrow_poster_2020.jpg" class="img-fluid" style="width:70%;"alt="burrow">
+      <div class="text-center col3">
+        <a href="{% url 'piper' %}"><img src="/media/piper.jpg" class="img-fluid" style="width:70%;" alt="piper"></a>
       </div>
     </div>
   </div>
   <div class = "row">
     <div class="d-flex justify-content-around" style="margin-top:5rem;">
       <div class="text-center col3">
-        <img src="/media/cloudy.jpg" class="img-fluid" style="width:70%;"alt="cloudy">
+        <a href="{% url 'lou' %}"><img src="/media/lou_small2.jpg" class="img-fluid" style="width:70%;" alt="lou"></a>
       </div>
       <div class="text-center col3">
-        <img src="/media/day_night.jpg" class="img-fluid" style="width:70%;"alt="day and night">
+        <a href="{% url 'luna' %}"><img src="/media/luna.jpg" class="img-fluid" style="width:70%;" alt="luna"></a>
       </div>
       <div class="text-center col3">
-        <img src="/media/geri.jpg" class="img-fluid" style="width:70%;"alt="geri">
-      </div>
-    </div>
-  </div>
-  <div class = "row">
-    <div class="d-flex justify-content-around" style="margin-top:5rem;">
-      <div class="text-center col3">
-        <img src="/media/knick.jpg" class="img-fluid" style="width:70%;"alt="knick">
-      </div>
-      <div class="text-center col3">
-        <img src="/media/tin.jpg" class="img-fluid" style="width:70%;"alt="tin">
-      </div>
-      <div class="text-center col3">
-        <img src="/media/lifted.jpg" class="img-fluid" style="width:70%;"alt="lifted">
-      </div>
-    </div>
-  </div>
-  <div class = "row">
-    <div class="d-flex justify-content-around" style="margin-top:5rem;">
-      <div class="text-center col3">
-        <img src="/media/lou_small2.jpg" class="img-fluid" style="width:70%;"alt="lou">
-      </div>
-      <div class="text-center col3">
-        <img src="/media/luna.jpg" class="img-fluid" style="width:70%;"alt="luna">
-      </div>
-      <div class="text-center col3">
-        <img src="/media/luxo.jpg" class="img-fluid" style="width:70%;"alt="luxo">
+        <a href="{% url 'presto' %}"><img src="/media/presto.jpg" class="img-fluid" style="width:70%;" alt="presto"></a>
       </div>
     </div>  
   </div> 
   <div class = "row">
-    <div class="d-flex justify-content-around" style="margin-top:5rem;"> 
-      <div class="text-center col3">
-        <img src="/media/oneman.jpg" class="img-fluid" style="width:70%;"alt="oneman">
-      </div>
-      <div class="text-center col3">
-        <img src="/media/party.jpg" class="img-fluid" style="width:70%;"alt="party">
-      </div>
-      <div class="text-center col3">
-        <img src="/media/piper.jpg" class="img-fluid" style="width:70%;"alt="piper">
-      </div>
-    </div>
-  </div>
-  <div class = "row">
     <div class="d-flex justify-content-around" style="margin-top:5rem;">
       <div class="text-center col3">
-        <img src="/media/presto.jpg" class="img-fluid" style="width:70%;"alt="presto">
-      </div> 
-      <div class="text-center col3">
-        <img src="/media/red.jpg" class="img-fluid" style="width:70%;"alt="red">
-      </div>  
-      <div class="text-center col3">
-        <img src="/media/sanjay.jpg" class="img-fluid" style="width:70%;"alt="sanjay">
+        <a href="{% url 'sanjay' %}"><img src="/media/sanjay.jpg" class="img-fluid" style="width:70%;" alt="sanjay"></a>
       </div> 
     </div> 
   </div> 
