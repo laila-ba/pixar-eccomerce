@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block page_header %}
+<div id="bckground">
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -14,19 +15,17 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container">
+    <div class="container" >
         <div class="row">
             <div class="col"style="margin-top:8rem;">
                 <img class=" img-fluid rounded mx-auto d-block" src="/media/thanks.png" alt="" />
-                <hr>
-                <p class="text-center text-black ">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row card1">
             <div class="col-12 col-lg-7 mx-auto">
-                <div class="order-confirmation-wrapper p-2 border">
+                <div class="order-confirmation-wrapper p-2 ">
+                    <p class="text-center text-black ">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
                     <div class="row">
                         <div class="col">
                             <small class="text-muted"><strong>Order Info:</strong></small>
@@ -186,15 +185,12 @@
                             <p class="mb-0">{{ order.grand_total }}</p>
                         </div>
                     </div>
+                    <a href="{% url 'products' %}" class="rounded-0 my-2">
+                        <span class="text-uppercase btn btn-outline-primary"style="border-radius:50px; margin-top: 1rem ;">Keep Shopping</span>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="row">
-			<div class="col-12 col-lg-7 mx-auto">
-				<a href="{% url 'products' %}" class="rounded-0 my-2">
-					<span class="text-uppercase btn btn-outline-primary"style="border-radius:50px; margin-top: 1rem ;">Keep Shopping</span>
-				</a>
-			</div>
-		</div>
     </div>
+</div>
 {% endblock %}
