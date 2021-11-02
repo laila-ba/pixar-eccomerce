@@ -79,9 +79,9 @@
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         {% if request.user.is_authenticated %}
                         {% if request.user.is_superuser %}
-                        <a href="" style ="font-family: Josefin-sans;letter-spacing: 2px; font-size: 0.8rem; font-weight:700;" class="dropdown-item">Product Management</a>
+                        <a href="" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" class="dropdown-item">Product Management</a>
                         {% endif %}
-                        <a href="" class="dropdown-item"style ="font-family: Josefin-sans;" >My Profile</a>
+                        <a href="{% url 'profile' %}" class="dropdown-item"style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" >My Profile</a>
                         <a href="{% url 'account_logout' %}" class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;">Logout</a>
                         {% else %}
                         <a href="{% url 'account_signup' %}" class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;">Register</a>
