@@ -12474,13 +12474,11 @@ align-items: center;
   margin: 0 auto;
 }
 .card2{
-  -webkit-border-radius: 50px;
-border-radius: 50px;
+  border-radius: 53px;
 background: #ffffff;
--webkit-box-shadow: 21px 21px 42px #cccccc, -21px -21px 42px #ffffff;
-box-shadow: 21px 21px 42px #cccccc, -21px -21px 42px #ffffff;
+box-shadow:  36px 36px 72px #b5b5b5,
+             -36px -36px 72px #ffffff;
 align-items: center;
-  padding-top: 160px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: #ffffff;
@@ -12507,11 +12505,6 @@ align-items: center;
 }
 
 /* Allauth form formatting */
-
-.allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
-}
 
 .allauth-form-inner-content input {
     border-color: #000;
