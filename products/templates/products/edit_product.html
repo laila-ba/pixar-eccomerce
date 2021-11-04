@@ -25,10 +25,16 @@
             <div class="col-12 col-md-6">
                 <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
-                    {{ form | crispy }}
+                    {% for field in form %}
+                        {% if field.name != 'image' %}
+                            {{ field | as_crispy_field }}
+                        {% else %}
+                            {{ field }}
+                        {% endif %}
+                    {% endfor %}
                     <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
-                        <button class="btn btn-black rounded-0" type="submit">Update Product</button>
+                        <a class="btn"style="color: #4CB3FF !important; background-color: #fff !important; border-color: #4CB3FF!important;border-radius:50px;"href="{% url 'products' %}">Cancel</a>
+                        <button type="submit" class="btn btn-outline" style="color: #fff !important; background-color: #4CB3FF !important; border-color:#fff !important;border-radius:50px;">Update Product</button>
                     </div>
                 </form>
             </div>            
