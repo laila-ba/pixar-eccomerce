@@ -81,7 +81,7 @@
 
 body {
   margin: 0;
-  font-family: Josephine-sans, sans-serif;
+  font-family: Josefin sans, sans-serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -12559,6 +12559,10 @@ align-items: center;
 }
 .bg-image1 {
   background-image: url('/media/signup.png');
+  background-size: cover;
+}
+.bg-image-3{
+  background-image: url('/media/bg-image-3.png');
   background-size: cover;
 }
 .stars{
