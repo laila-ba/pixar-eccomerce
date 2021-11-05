@@ -11,8 +11,75 @@
 {% block content %}
 
 <div class='luca-logo'>
-    <a href="#"><img src="/media/io-logo.png "class="img-fluid"></a>
-
+    <a href="#"><img src="/media/io-logo.png " class="img-fluid"></a>
 </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="product-container col-10 offset-1 card1" style="margin-top: 2.5rem;">
+            <h5 class="text text-center"> Growing up can be a bumpy road, and it’s no exception for Riley, who is uprooted from her Midwest life when her father starts a new job in San Francisco. Like all of us, Riley is guided by her emotions – Joy, Fear, Anger, Disgust and Sadness. The emotions live in Headquarters, the control center inside Riley’s mind, where they help advise her through everyday life. As Riley and her emotions struggle to adjust to a new life in San Francisco, turmoil ensues in Headquarters. Although Joy, Riley’s main and most important emotion, tries to keep things positive, the emotions conflict on how best to navigate a new city, house and school.
+            </h5>
+            <hr>
+            <h2 class="trailers"> Trailers</h2>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/1t0A_tZGrYw" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Joy</h2>
+                <a href="#"><img src="/media/joy.png " class="img-fluid"></a>
+                <h5 class="text">Joy’s goal has always been to make sure Riley stays happy. She is lighthearted, optimistic and determined to find the fun in every situation. Joy sees challenges in Riley’s life as opportunities, and the less happy moments as hiccups on the way back to something great. As long as Riley is happy, so is Joy.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Sadness</h2>
+                <a href="#"><img src="/media/sad.png " class="img-fluid"></a>
+                <h5 class="text">None of the other Emotions really understand what Sadness’s role is. Sadness would love to be more optimistic and helpful in keeping Riley happy, but she finds it so hard to be positive. Sometimes it seems like the best thing to do is just lie on the floor and have a good cry. 
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Anger </h2>
+                <a href="#"><img src="/media/anger.png " class="img-fluid"></a>
+                <h5 class="text">Anger feels very passionately about making sure things are fair for Riley. He has a fiery spirit and tends to explode (literally) when things don’t go as planned. He is quick to overreact and has little patience for life’s imperfections.  
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Disgust</h2>
+                <a href="#"><img src="/media/disgust1.png " class="img-fluid"></a>
+                <h5 class="text">Disgust is highly opinionated, extremely honest and prevents Riley from getting poisoned – both physically and socially. She keeps a careful eye on the people, places and things that Riley comes into contact with – whether that’s broccoli or last year’s fashion trend. Disgust always has the best of intentions and refuses to lower her standards.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Fear</h2>
+                <a href="#"><img src="/media/fear.png " class="img-fluid"></a>
+                <h5 class="text">Fear’s main job is to protect Riley and keep her safe. He is constantly on the lookout for potential disasters, and spends time evaluating the possible dangers, pitfalls and risk involved in Riley’s everyday activities. There are very few activities and events that Fear does not find to be dangerous and possibly fatal. 
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Riley</h2>
+                <a href="#"><img src="/media/riley.png " class="img-fluid"></a>
+                <h5 class="text">Riley Andersen is an eternally happy kid, at least until she turns eleven and her dad gets a job across the country, forcing the family to relocate to San Francisco. As she struggles to navigate a new home and school, Riley experiences an unfamiliar mix of emotions.
+                </h5>
+                <hr>
+            </div>
+        </div>
+    </div>
 
-{% endblock %}
+    <div class="btt-button shadow-sm rounded-0 border-black">
+        <a class="btt-link d-flex h-100">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        </a>	
+    </div>
+    {% endblock %}
+    {% block postloadjs %}
+        {{ block.super }}
+        <script type="text/javascript">
+            $('.btt-link').click(function(e) {
+                window.scrollTo(0,0)
+            })
+        </script>
+    {% endblock %}

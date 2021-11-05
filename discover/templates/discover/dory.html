@@ -11,8 +11,113 @@
 {% block content %}
 
 <div class='luca-logo'>
-    <a href="#"><img src="/media/dory-logo.png "class="img-fluid"></a>
-
+    <a href="#"><img src="/media/dory-logo.png " class="img-fluid"></a>
 </div>
 
-{% endblock %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="product-container col-10 offset-1 card1" style="margin-top: 2.5rem;">
+            <h5 class="text text-center"> Forgetful blue tang Dory is living happily in the reef with Marlin and Nemo.
+                When Dory suddenly remembers that she has a family out there who may be looking for her, the trio takes
+                off on a life-changing adventure across the ocean to California’s prestigious Marine Life Institute, a
+                rehabilitation center and aquarium. In an effort to find her mom and dad, Dory enlists the help of three
+                of the MLI’s most intriguing residents: Hank, a cantankerous “septopus" who frequently gives employees
+                the slip; Bailey, a beluga whale who is convinced his biological sonar skills are on the fritz; and
+                Destiny, a nearsighted whale shark. Deftly navigating the complex inner workings of the MLI, Dory and
+                her friends discover the magic within their flaws, friendships and family.
+            </h5>
+            <hr>
+            <h2 class="trailers"> Trailers</h2>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/NQu-153MnGQ" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">The Master Mimic</h2>
+                <a href="#"><img src="/media/octo.png " class="img-fluid"></a>
+                <h5 class="text">A mimic octopus, the inspiration for Hank, has the ability to ward off predators by
+                    mimicking other creatures (like a sea snake, flatfish or lionfish) . Likewise, it can camouflage
+                    itself against its background, from jagged coral to a sandy sea bottom. It can streamline its body
+                    and fold into itself. Its arms are covered in hundreds of suckers, which have the ability to attach
+                    to almost any surface, giving the animal unmatched mobility, as well as an uncanny ability to
+                    manipulate items like the lid of a jar.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Dory</h2>
+                <a href="#"><img src="/media/dor.png " class="img-fluid"></a>
+                <h5 class="text">Dory is a bright blue tang with a sunny personality. She suffers from short-term memory
+                    loss, which normally doesn’t upset her upbeat attitude—until she realizes she’s forgotten something
+                    big: her family. She’s found a new family in Marlin and Nemo, but she’s haunted by the belief that
+                    someone out there is looking for her. Dory may have trouble recalling exactly what—or who—she’s
+                    searching for, but she won’t give up until she uncovers her past and discovers something else along
+                    the way: self-acceptance.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Nemo & Marlin </h2>
+                <a href="#"><img src="/media/marlin.png " class="img-fluid"></a>
+                <h5 class="text">Dory is on a mission to the California coast to track down her family, and Marlin and
+                    Nemo are there to help her. Nemo may just be a young clownfish with a lucky fin, but he
+                    wholeheartedly believes in Dory. After all, he understands what it’s like to be different. And
+                    Marlin, who of course knows how it feels to lose family, realizes he has no choice but to pack up
+                    his nervous energy and skepticism and embark on yet another adventure, this time to help his friend
+                    in need.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Bailey</h2>
+                <a href="#"><img src="/media/bailey.png " class="img-fluid"></a>
+                <h5 class="text">Bailey is the Marine Life Institute’s resident beluga whale who is convinced his
+                    biological sonar skills are on the fritz. The good news—or bad news, depending on who you ask—is
+                    that doctors at the MLI can’t seem to find anything wrong with him. Bailey’s flair for the dramatic
+                    never ceases to push his neighbor’s buttons: whale shark Destiny can’t seem to get through to him,
+                    no matter how hard she tries. Maybe he’ll listen to new friend Dory, who seems to be full of crazy
+                    ideas.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Destiny</h2>
+                <a href="#"><img src="/media/destiny.png " class="img-fluid"></a>
+                <h5 class="text">Destiny may be a clumsy swimmer, but she has a big heart. She has a big everything,
+                    actually—whale sharks are the biggest fish in the sea. Destiny resides in the Marine Life Institute,
+                    where one day an oddly familiar blue tang named Dory falls into her pool. Destiny is admittedly
+                    embarrassed by her obvious lack of grace, a product of poor eyesight, but Dory thinks she swims
+                    beautifully. And Dory is delighted to learn that her supersized friend speaks whale, too
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Becky</h2>
+                <a href="#"><img src="/media/becky.png " class="img-fluid"></a>
+                <h5 class="text">Becky is an offbeat, kooky loon who takes a liking to Marlin. Although she inspires little confidence—especially from a certain, skeptical clownfish—she might be smarter than she looks. 
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Gerald</h2>
+                <a href="#"><img src="/media/gerald.png " class="img-fluid"></a>
+                <h5 class="text">Gearld is a sea lion who wants nothing more than to share a rock with fellow pinnipeds Fluke and Rudder.
+                </h5>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="btt-button shadow-sm rounded-0 border-black">
+        <a class="btt-link d-flex h-100">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        </a>	
+    </div>
+    {% endblock %}
+    {% block postloadjs %}
+        {{ block.super }}
+        <script type="text/javascript">
+            $('.btt-link').click(function(e) {
+                window.scrollTo(0,0)
+            })
+        </script>
+    {% endblock %}

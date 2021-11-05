@@ -12,7 +12,90 @@
 
 <div class='luca-logo'>
     <a href="#"><img src="/media/dino-logo.png "class="img-fluid"></a>
-
 </div>
 
-{% endblock %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="product-container col-10 offset-1 card1" style="margin-top: 2.5rem;">
+            <h5 class="text text-center"> The Good Dinosaur asks the question: What if the asteroid that forever changed life on Earth missed the planet completely and giant dinosaurs never became extinct? Pixar takes you on an epic journey into the world of dinosaurs where an Apatosaurus named Arlo makes an unlikely human friend. While traveling through a harsh and mysterious landscape, Arlo learns the power of confronting his fears and discovers what he is truly capable of.
+            </h5>
+            <hr>
+            <h2 class="trailers"> Trailers</h2>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/O-RgquKVTPE" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Arlo</h2>
+                <a href="#"><img src="/media/arlo.png " class="img-fluid"></a>
+                <h5 class="text">The last to hatch among his siblings, 11-year-old Arlo has yet to make his mark on his family’s farm. Though he is eager to help out with chores, this sheltered Apatosaurus just can’t seem to get past his fear of everything.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Spot</h2>
+                <a href="#"><img src="/media/spot.png " class="img-fluid"></a>
+                <h5 class="text">Spot is a wild, tough and tenacious human boy who has lived alone in the wilderness for much of his life. He speaks in only grunts and growls, but his strengths are clear: he’s fearless
+                    and confident.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Poppa </h2>
+                <a href="#"><img src="/media/poppa.png " class="img-fluid"></a>
+                <h5 class="text">Brave and selfless, Poppa is a devoted husband and father, working tirelessly to make a life for his family on their farm. He has a soft spot for Arlo, his small and fearful son, and takes special care of him as he grows up.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Momma</h2>
+                <a href="#"><img src="/media/momma.png " class="img-fluid"></a>
+                <h5 class="text">A loving wife and mother, Momma is smart and quick-witted. She’s a hard worker with a lot of love for her family, and she keeps her children and their farm in order. Her quiet strength is the backbone of the family. 
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Pet Collector</h2>
+                <a href="#"><img src="/media/pet.png " class="img-fluid"></a>
+                <h5 class="text">Pet Collector is a mysterious Styracosaurus who lives in the wilderness. Like Arlo, he harbors unreasonable fears. His ability to blend into his surroundings helps—along with an unusual (but not exactly fierce) collection of forest critters he’s recruited to protect him. 
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Butch</h2>
+                <a href="#"><img src="/media/butch.png " class="img-fluid"></a>
+                <h5 class="text">According to production designer Harley Jessup, the filmmakers did a deep dive into what’s known about the size of a real Apatosaurus in an effort to add authenticity to Arlo and his family. “We created a life-size printout of Arlo to help imagine his gigantic scale,” says Jessup. “Arlo is 18 feet tall and weighs about 6 tons, and Poppa, at 46 feet, is taller than the main building at Pixar. We exaggerated the size of the T-Rexes for our story, and they range from 38 to 50 feet tall, with Butch weighing in at about 45 tons.”
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Pterodactyls</h2>
+                <a href="#"><img src="/media/Pterodactyls.png " class="img-fluid"></a>
+                <h5 class="text">The Pterodactyls are a search-and-“rescue" team of five. They like to sit back and let the often-treacherous storms in this part of the world do their dirty work, then reap the benefits of the devastation.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Raptors</h2>
+                <a href="#"><img src="/media/raptors.png " class="img-fluid"></a>
+                <h5 class="text">Raptors prey on the prized herd of longhorns that belong to Butch and his Tyrannosaurus Rex family. Raptors—or Rustlers, as Butch calls them—sport wiry, feathered bodies and hardly compare in size or strength to a T-Rex. But as a group, the Raptors pose quite a threat, and even a T-Rex may need to call in reinforcements before tangling with them.  
+                </h5>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="btt-button shadow-sm rounded-0 border-black">
+        <a class="btt-link d-flex h-100">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        </a>	
+    </div>
+    {% endblock %}
+    {% block postloadjs %}
+        {{ block.super }}
+        <script type="text/javascript">
+            $('.btt-link').click(function(e) {
+                window.scrollTo(0,0)
+            })
+        </script>
+    {% endblock %}

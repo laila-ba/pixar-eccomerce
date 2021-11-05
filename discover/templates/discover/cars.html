@@ -11,8 +11,117 @@
 {% block content %}
 
 <div class='luca-logo'>
-    <a href="#"><img src="/media/cars-logo.jpeg "class="img-fluid"></a>
-
+    <a href="#"><img src="/media/cars-logo.jpeg " class="img-fluid"></a>
 </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="product-container col-10 offset-1 card1" style="margin-top: 2.5rem;">
+            <h5 class="text text-center"> Aspiring champion race car Lightning McQueen is on the fast track to success,
+                fame, and everything he's ever hoped for—until he takes an unexpected detour on dusty Route 66. His
+                have-it-all-now attitude is thrown into a tailspin when a small-town community that time forgot shows
+                McQueen what he's been missing in his high-octane life.
+            </h5>
+            <hr>
+            <h2 class="trailers"> Trailers</h2>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/Px_-H_P5asE" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Lightning McQueen </h2>
+                <a href="#"><img src="/media/mcqueen.png " class="img-fluid"></a>
+                <h5 class="text">Lightning McQueen is a hotshot, rookie race car, poised to become the youngest car ever
+                    to win the Piston Cup Championship. He has just two things on his mind: winning and the perks that
+                    come with it. But when he in-advertently gets lost in the town of Radiator Springs, he meets a new
+                    group of friends who challenge him to reconsider the car he wants to be.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Mater</h2>
+                <a href="#"><img src="/media/mater.png " class="img-fluid"></a>
+                <h5 class="text">Mater is a good ol' boy tow truck with a big heart and a lovable laugh to match. Though
+                    a little rusty, he has the quickest towrope in Carburetor County and is always the first to lend a
+                    helping hand. He's the sweetest, most loyal guy in town and the first to befriend newcomer Lightning
+                    McQueen.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Sally</h2>
+                <a href="#"><img src="/media/sally.png " class="img-fluid"></a>
+                <h5 class="text">Sally is a beautiful 2002 Porsche 911 from California who grew tired of life in the
+                    fast lane and made a new start in the small town of Radiator Springs. Charming, intelligent, and
+                    witty, she is the town's attorney and the car most dedicated to one day getting Radiator Springs
+                    "back on the map."
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Doc Hudson</h2>
+                <a href="#"><img src="/media/doc.png " class="img-fluid"></a>
+                <h5 class="text">Doc Hudson is a 1951 Hudson Hornet, a quiet country doctor with a mysterious past. A
+                    cornerstone of Radiator Springs, Doc runs the local medical clinic and serves as the town judge. But
+                    when Lightning McQueen rolls through town, Doc's old competitive engine gets revved up once more.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Fillmore</h2>
+                <a href="#"><img src="/media/fillmore.png " class="img-fluid"></a>
+                <h5 class="text">Fillmore is a 1960 VW Bus and Radiator Springs' resident hippie. A believer in
+                    individuality and all things natural, he brews his own organic fuel and preaches its many benefits.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Sheriff</h2>
+                <a href="#"><img src="/media/sheriff.png " class="img-fluid"></a>
+                <h5 class="text">Sheriff is a 1949 Mercury Police Cruiser. As Radiator Springs' resident peacekeeper, he
+                    takes his job very seriously. Between his law enforcement duties and the stories he tells about his
+                    beloved Mother Road, it is no surprise that Sheriff can often be found napping behind the Radiator
+                    Springs billboard.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Sarge</h2>
+                <a href="#"><img src="/media/sarge.png " class="img-fluid"></a>
+                <h5 class="text">Sarge is a 1942 Willys Army Jeep and a patriotic veteran to the core. He proudly flies
+                    the Stars and Stripes and begins each day with a rousing rendition of reveille. When he's not
+                    running Sarge's Surplus Hut, he can be found precisely manicuring the lawn in front of his Quonset
+                    garage into a perfect flattop.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Ramone</h2>
+                <a href="#"><img src="/media/ramone.png " class="img-fluid"></a>
+                <h5 class="text">Ramone is a 1959 Impala low-rider and the owner and proprietor of Ramone's House of Body Art, the local custom body and paint shop. Ramone has formed the habit of repainting himself daily because he hasn't had a real customer in years.
+                </h5>
+                <hr>
+            </div>
+            <div class="text-center characters">
+                <h2 class="trailers">Flo</h2>
+                <a href="#"><img src="/media/flo.png " class="img-fluid"></a>
+                <h5 class="text">Flo is a 1950s show car and the manager of Flo's V-8 Café, the only gas station for miles around. A sassy, no-nonsense lady, Flo serves all the folks in town the "finest fuel in fifty states."
+                </h5>
+                <hr>
+            </div>
+        </div>
+    </div>
 
-{% endblock %}
+    <div class="btt-button shadow-sm rounded-0 border-black">
+        <a class="btt-link d-flex h-100">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        </a>	
+    </div>
+    {% endblock %}
+    {% block postloadjs %}
+        {{ block.super }}
+        <script type="text/javascript">
+            $('.btt-link').click(function(e) {
+                window.scrollTo(0,0)
+            })
+        </script>
+    {% endblock %}
