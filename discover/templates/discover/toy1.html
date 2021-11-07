@@ -11,21 +11,97 @@
 {% block content %}
 
 <div class='luca-logo'>
-    <a href="#"><img src="/media/toy-logo.jpeg "class="img-fluid"></a>
+    <a href="#"><img src="/media/toy-logo.jpeg " class="img-fluid"></a>
+</div>
+<div class="row">
+    <div class="product-container col-10 offset-1 card1" style="margin-top: 2.5rem;">
+        <h5 class="text text-center"> Ever wonder what toys do when people aren't around? Toy Story answers that question with a fantastic fun-filled journey, viewed mostly through the eyes of two rival toys – Woody, the lanky, likable cowboy, and Buzz Lightyear, the fearless space ranger.  Led by Woody, Andy's toys live happily in his room until Andy's birthday brings Buzz Lightyear onto the scene. Afraid of losing his place in Andy's heart, Woody plots against Buzz.
 
+            But when circumstances separate Buzz and Woody from their owner, the comically-mismatched duo eventually learn to put aside their differences, and they find themselves on a hilarious adventure-filled mission where the only way they can survive is to form an uneasy alliance.
+        </h5>
+        <hr>
+        <h2 class="trailers"> Trailers</h2>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/T_BXsjiFa0M" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="text-center characters">
+            <h2 class="trailers">Woody</h2>
+            <a href="#"><img src="/media/woody.png " class="img-fluid"></a>
+            <h5 class="text">Woody is a traditional kind of toy, with his pull-string voice box and cowboy detailing. He has long enjoyed a place of honor as the favorite among six-year-old Andy's toys—until Buzz Lightyear crash-lands and shakes up his world.
+            </h5>
+            <hr>
+        </div>
+        <div class="text-center characters">
+            <h2 class="trailers">Buzz Lightyear</h2>
+            <a href="#"><img src="/media/buzz.png " class="img-fluid"></a>
+            <h5 class="text">This space ranger action figure has it all: a laser beam, karate-chop action, pop-out wings, and a belief that he's on a secret mission for Star Command. Much to Woody's chagrin, Buzz monopolizes Andy's attention and becomes an instant favorite with his toymates.
+            </h5>
+            <hr>
+        </div>
+        <div class="text-center characters">
+            <h2 class="trailers">Ham</h2>
+            <a href="#"><img src="/media/ham.png " class="img-fluid"></a>
+            <h5 class="text">The piggy bank in the window knows everything. Or at least that's what Hamm would have everyone believe when he's sticking his snout into the day's affairs.
+            </h5>
+            <hr>
+        </div>
+        <div class="text-center characters">
+            <h2 class="trailers">Mr. Potato Head</h2>
+            <a href="#"><img src="/media/potato1.png " class="img-fluid"></a>
+            <h5 class="text">Mr. Potato Head has a chip on his shoulder, but you would too if your face kept falling off. His cynical take on life makes him the toy to question Woody's authority.
+            </h5>
+            <hr>
+        </div>
+        <div class="text-center characters">
+            <h2 class="trailers">Rex </h2>
+            <a href="#"><img src="/media/rex.png " class="img-fluid"></a>
+            <h5 class="text">Rex is a neurotic and insecure 12-inch plastic dinosaur with a small-roar complex and limited upper-arm movement. With his tender heart and weak spine, this Tyrannosaurus is one of the most lovable toys of the bunch.
+            </h5>
+            <hr>
+        </div>
+        <div class="text-center characters">
+            <h2 class="trailers">Slinky</h2>
+            <a href="#"><img src="/media/slinky.png " class="img-fluid"></a>
+            <h5 class="text">A dog is man's best friend, and the saying rings true for those of the vinyl variety, too. Slinky is Woody's trusted friend and partner in playing checkers—and the one who "stretches" the most in the friendship.
+            </h5>
+            <hr>
+        </div>
+        <div class="text-center characters">
+            <h2 class="trailers">Mutant Toys</h2>
+            <a href="#"><img src="/media/mutant.png " class="img-fluid"></a>
+            <h5 class="text">The toys next door to Andy are an odd-looking bunch of hybrids that are the product of Sid's twisted sense of playtime. Despite their shocking outward appearances, the creations are truly selfless and gentle at the core, helping each other to survive and hopefully outgrow Sid.
+            </h5>
+            <hr>
+        </div>
+        <div class="text-center characters">
+            <h2 class="trailers">Sid</h2>
+            <a href="#"><img src="/media/sid.png " class="img-fluid"></a>
+            <h5 class="text">Every neighborhood has a bully, and Sid's it on Andy's block. He's a malicious and overactive kid who loves to torture, torment, and blow up toys all in the name of fun.
+            </h5>
+            <hr>
+        </div>
+        <div class="text-center characters">
+            <h2 class="trailers">Andy</h2>
+            <a href="#"><img src="/media/andy1.png " class="img-fluid"></a>
+            <h5 class="text">Able to create elaborate gold-mining towns with boxes and crayons, Andy can dream up any prop for a good vs. evil scenario that stars all of his toys. With Andy in charge, good always triumphs.
+            </h5>
+            <hr>
+        </div>
+    </div>
 </div>
 
 <div class="btt-button shadow-sm rounded-0 border-black">
     <a class="btt-link d-flex h-100">
         <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
-    </a>	
+    </a>
 </div>
 {% endblock %}
 {% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript">
-        $('.btt-link').click(function(e) {
-            window.scrollTo(0,0)
-        })
-    </script>
+{{ block.super }}
+<script type="text/javascript">
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0)
+    })
+</script>
 {% endblock %}
