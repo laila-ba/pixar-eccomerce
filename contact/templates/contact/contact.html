@@ -1,0 +1,49 @@
+{% extends "account/base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'contact/css/contact.css' %}">
+{% endblock %}
+{% load i18n %}
+
+
+{% block inner_content %}
+
+  <div class="container mb-2">
+      <div class="row">
+          <div class="col card1">
+            <h3 class="login-heading mb-4 text-uppercase text-center"style="color: #4CB3FF;font-family: 'Josefin Sans', sans-serif; ">Contact us!</h3>
+              <img class=" img-fluid rounded mx-auto d-block" src="/media/contact.png" alt="boo" />
+
+                <form onsubmit="return;" class="contact1-form validate-form mx-auto" id="form">
+
+                  <div class= "wrap-input1 validate-input txtb" data-validate = "Name is required">
+                    <label for="fullname">Full name (required)*</label>
+                    <input id="fullname" class="input1" name="fullname" type="text" placeholder="Full Name.." required>
+                  </div>
+          
+                  <div class="wrap-input1 validate-input txtb" data-validate = "Valid email is required: ex@abc.xyz">
+                    <label for="emailaddress">Email Address (required)*</label>
+                    <input type="email" class="input1" id="emailaddress" name="emailaddress" placeholder="example@domain.com" required>
+                  </div>
+          
+                  <div class="wrap-input1 validate-input txtb">
+                    <label for="message">Your Message:</label>
+                    <textarea class="input1"id="message" name="message" placeholder="Message" required></textarea>
+                    <span class="shadow-input1"></span>
+                  </div>
+                  <div id="error-msg" ></div>
+                <div class="text-center">
+                <a class="btn btn-outline" href="{% url 'home' %}"style="border-radius:50px;color:#4CB3FF; border-color:#4CB3FF;" >Cancel</a>
+                <button type="submit"class="btn btn-outline"
+                style="color: #fff !important; background-color: #4CB3FF !important; border-color:#fff !important;border-radius:50px;">Send</button>
+              </div>
+              </form>                           
+          </div>
+      </div>
+{% endblock %}
+</div>
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'contact/js/contact.js' %}"></script>
+{% endblock %}

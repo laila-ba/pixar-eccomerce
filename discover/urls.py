@@ -3,7 +3,6 @@ from . import views
 
 urlpatterns = [
     path('films/', views.all_films, name='films'),
-    path('shorts/', views.all_shorts, name='shorts'),
     path('luca/', views.luca, name='luca'),
     path('soul/', views.soul, name='soul'),
     path('onward/', views.onward, name='onward'),
@@ -28,14 +27,4 @@ urlpatterns = [
     path('toy2/', views.toy2, name='toy2'),
     path('bug/', views.bug, name='bug'),
     path('toy1/', views.toy1, name='toy1'),
-    path('bao/', views.bao, name='bao'),
-    path('lava/', views.lava, name='lava'),
-    path('burrow/', views.burrow, name='burrow'),
-    path('cloudy/', views.cloudy, name='cloudy'),
-    path('day/', views.day, name='day'),
-    path('lou/', views.lou, name='lou'),
-    path('luna/', views.luna, name='luna'),
-    path('piper/', views.piper, name='piper'),
-    path('presto/', views.presto, name='presto'),
-    path('sanjay/', views.sanjay, name='sanjay'),
 ]

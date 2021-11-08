@@ -78,37 +78,3 @@ def bug(request):
 def toy1(request):
         return render(request, 'discover/toy1.html')
 
-
-def all_shorts(request):
-    """ A view that renders the shorts contents page """
-    return render(request, 'discover/shorts.html')
-
-def bao(request):
-        return render(request, 'discover/bao.html')
-
-def lava(request):
-        return render(request, 'discover/lava.html')
-
-def burrow(request):
-        return render(request, 'discover/burrow.html')
-
-def cloudy(request):
-        return render(request, 'discover/cloudy.html')
-
-def day(request):
-        return render(request, 'discover/day.html')
-
-def lou(request):
-        return render(request, 'discover/lou.html')
-
-def luna(request):
-        return render(request, 'discover/luna.html')
-
-def piper(request):
-        return render(request, 'discover/piper.html')
-
-def presto(request):
-        return render(request, 'discover/presto.html')
-
-def sanjay(request):
-        return render(request, 'discover/sanjay.html')

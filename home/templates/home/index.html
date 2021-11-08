@@ -8,7 +8,9 @@
             <div class="text-center">
                 <h1 class="mx-auto my-0 text-uppercase">Adventure</h1>
                 <h2 class="mx-auto my-0 text-uppercase">is out there</h2>
-                <button type="button" class="btn btn-outline-light"style="border-radius:50px;">DISCOVER</button>
+                <a href="{% url 'films' %}">
+                <button type="button" href="{% url 'films' %}" class="btn btn-outline-light"style="border-radius:50px;">DISCOVER</button>
+            </a>
             </div>
         </div>
     </div>
@@ -22,37 +24,37 @@
                 <a class="portfolio-item" href="{% url 'films' %}">
                     <div class="caption">
                         <div class="caption-content">
-                            <div class="h2 btn btn-outline"style="color: #fff !important;  border-color:#fff !important;border-radius:50px;">FILMS</div>
+                            <div class="h2 btn btn-outline"style="color: #fff !important; ">FILMS</div>
                         </div>
                     </div>
                     <img class="img-fluid" src="/media/up.jpg" alt="..." />
                 </a>
             </div>
             <div class="col-lg-6">
-                <a class="portfolio-item" href="{% url 'shorts' %}">
+                <a class="portfolio-item" href="{% url 'account_login' %}}">
                     <div class="caption">
                         <div class="caption-content">
-                            <div class="h2 btn btn-outline"style="color: #fff !important;  border-color:#fff !important;border-radius:50px;">SHORTS</div>
+                            <div class="h2 btn btn-outline"style="color: #fff !important;">LOGIN</div>
                         </div>
                     </div>
-                    <img class="img-fluid" src="/media/bao.jpg" alt="..." />
+                    <img class="img-fluid" src="/media/cars2-hero.jpg" alt="..." />
                 </a>
             </div>
             <div class="col-lg-6">
                 <a class="portfolio-item" href="{% url 'products' %}">
                     <div class="caption">
                         <div class="caption-content">
-                            <div class="h2 btn btn-outline"style="color: #fff !important;  border-color:#fff !important;border-radius:50px;">SHOP</div>
+                            <div class="h2 btn btn-outline"style="color: #fff !important;" >SHOP</div>
                         </div>
                     </div>
                     <img class="img-fluid" src="/media/rat-hero.jpg" alt="..." />
                 </a>
             </div>
             <div class="col-lg-6">
-                <a class="portfolio-item" href="{% url 'profile' %}">
+                <a class="portfolio-item" href="{% url 'contact' %}">
                     <div class="caption">
                         <div class="caption-content">
-                            <div class="h2 btn btn-outline"style="color: #fff !important;  border-color:#fff !important;border-radius:50px;">LOGIN</div>
+                            <div class="h2 btn btn-outline"style="color: #fff !important; ">CONTACT</div>
                         </div>
                     </div>
                     <img class="img-fluid" src="/media/dory.jpg" alt="..." />

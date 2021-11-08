@@ -12508,7 +12508,7 @@ align-items: center;
 
 .allauth-form-inner-content input {
     border-color: #000;
-    border-radius: 0;
+    border-radius: 50px;
     margin-bottom:1.5rem;
 }
 

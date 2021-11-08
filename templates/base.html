@@ -47,45 +47,38 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" style="color: #000;" aria-current="page" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link" style="color: #000;" aria-current="page" href="{% url 'home' %}">HOME</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" style="color: #000;" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Discover
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'films' %}">Feature Films</a></li>
-                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'shorts' %}">Shorts</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #000;" aria-current="page" href="{% url 'films' %}">FEATURE FILMS</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" style="color: #000;" href="{% url 'products' %}" id="navbarDropdownMenuLink" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Shop
+                            SHOP
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}?category=toys">Toys</a></li>
-                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}?category=clothes">Clothing</a></li>
-                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}?category=adults">Adults</a></li>
-                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}">All Products</a></li>
+                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}?category=toys">TOYS</a></li>
+                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}?category=clothes">CLOTHING</a></li>
+                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}?category=adults">ADULTS</a></li>
+                            <li><a class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" href="{% url 'products' %}">ALL PRODUCTS</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" style="color: #000;" href="#" id="navbarDropdownMenuLink" role="button"
                           data-bs-toggle="dropdown" aria-expanded="false">
-                          My Account
+                          MY ACCOUNT
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         {% if request.user.is_authenticated %}
                         {% if request.user.is_superuser %}
-                        <a href="{% url 'add_product' %}" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" class="dropdown-item">Product Management</a>
+                        <a href="{% url 'add_product' %}" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" class="dropdown-item">PRODUCT MANAGMENT</a>
                         {% endif %}
-                        <a href="{% url 'profile' %}" class="dropdown-item"style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" >My Profile</a>
-                        <a href="{% url 'account_logout' %}" class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;">Logout</a>
+                        <a href="{% url 'profile' %}" class="dropdown-item"style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" >MY PROFILE</a>
+                        <a href="{% url 'account_logout' %}" class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;">LOGOUT</a>
                         {% else %}
-                        <a href="{% url 'account_signup' %}" class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;">Register</a>
-                        <a href="{% url 'account_login' %}" class="dropdown-item"style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;">Login</a>
+                        <a href="{% url 'account_signup' %}" class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;">REGISTER</a>
+                        <a href="{% url 'account_login' %}" class="dropdown-item"style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;">LOGIN</a>
                         {% endif %}
                       </ul>
                   </li>

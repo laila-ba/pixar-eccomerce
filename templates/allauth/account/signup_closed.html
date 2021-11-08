@@ -5,9 +5,25 @@
 {% block head_title %}{% trans "Sign Up Closed" %}{% endblock %}
 
 {% block inner_content %}
-<hr>
-<h2 class="logo-font mb-4">{% trans "Sign Up Closed" %}</h2>
-<hr>
-
-<p>{% trans "We are sorry, but the sign up is currently closed." %}</p>
+<div class="container-fluid ps-md-0 card12">
+    <div class="row g-0">
+      <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image1"></div>
+      <div class="col-md-8 col-lg-6">
+        <div class="login d-flex align-items-center " style="margin-top:0!important; margin-bottom: 12rem!important;">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 col-lg-8 mx-auto">
+                <h3 class="login-heading mb-4 text-uppercase"style="color: #4CB3FF;font-family: 'Josefin Sans', sans-serif; ">{% trans "Sign Up Closed" %}</h3>
+                <hr>
+             <p>{% trans "We are sorry, but the sign up is currently closed." %}</p>
+             <a class="btn btn-outline"
+                                    style="margin-bottom: 1rem; color: #4CB3FF !important; background-color: #fff !important; border-color: #4CB3FF!important;border-radius:50px;"
+                                    href="{% url 'home' %}">Home</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
 {% endblock %}
+</div>
