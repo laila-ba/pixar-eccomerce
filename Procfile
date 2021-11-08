@@ -1,1 +1,1 @@
-web: gunicorn pixar-eccommerce.wsgi:application
+web: gunicorn pixar_eccommerce.wsgi:application
