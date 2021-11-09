@@ -12421,7 +12421,7 @@ body {
 .background{
   position: relative;
   width: 100%;
-  min-height: 35rem;
+  min-height: 100vh;
   background:url('/media/star.png') no-repeat center center fixed;
   background-position: center;
   background-repeat: no-repeat;
