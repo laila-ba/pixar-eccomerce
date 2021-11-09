@@ -9,7 +9,7 @@
   <div class="container mb-2">
       <div class="row">
           <div class="col card1">
-              <img class=" img-fluid rounded mx-auto d-block" src="/media/disgust.png" alt="boo" />
+              <img class=" img-fluid rounded mx-auto d-block" src="{{ MEDIA_URL }}disgust.png" alt="boo" />
               <p class="text-center " style="font-family: sans-serif;  font-size: 1.5rem; font-weight:700;">You're Leaving?</p>
               <p class="text-center lead mb-5" style="margin-bottom: 20px !important;">{% trans 'Are you sure you want to sign out?' %}</p>
               <form method="post" action="{% url 'account_logout' %}">
