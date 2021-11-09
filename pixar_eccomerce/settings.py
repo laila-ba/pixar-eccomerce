@@ -100,7 +100,6 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'pixar_eccomerce.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
