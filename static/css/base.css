@@ -12113,6 +12113,9 @@ body {
     max-width: 40rem;
     font-size: 1.25rem;
   }
+  #card{
+    max-height:1000px;
+  }
 }
 
 .about-section {
@@ -12417,6 +12420,7 @@ body {
   -webkit-border-radius: 0px;
   border-radius: 0px;
   background: #ffffff;
+  height:1300px;
 }
 .background{
   position: relative;
@@ -12431,7 +12435,7 @@ body {
 .background2{
   position: relative;
   width: 100%;
-  min-height: 35rem;
+  min-height: 100vh;
   background:url('/media/checkout.png') no-repeat center center fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -12447,7 +12451,8 @@ footer{
   bottom:0;
   width:100%;
   position: relative;
-  height:60px;   /* Height of the footer */
+  height:2.5rem;   /* Height of the footer */
+  margin-top:60px;
 }
 
 .card1{
