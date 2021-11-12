@@ -82,7 +82,7 @@
 body {
   margin: 0;
   font-family: Josefin sans, sans-serif;
-  font-size: var(--bs-body-font-size);
+  font-size: 0.8rem!important;
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
@@ -11541,116 +11541,7 @@ body {
   letter-spacing: 0.15rem;
   border-radius:0;
 }
-.masthead38{
-  position: relative;
-  width: 100%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background:url('/media/presto-hero.jpg') no-repeat center center fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-.masthead37{
-  position: relative;
-  width: 100%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background:url('/media/cloudy-hero.jpg') no-repeat center center fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-.masthead36{
-  position: relative;
-  width: 100%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background:url('/media/day-hero.jpg') no-repeat center center fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-.masthead35{
-  position: relative;
-  width: 100%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background:url('/media/luna-hero.jpg') no-repeat center center fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-.masthead34{
-  position: relative;
-  width: 100%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background:url('/media/lava-hero.jpg') no-repeat center center fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-.masthead33{
-  position: relative;
-  width: 100%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background:url('/media/sanjay-hero.jpg') no-repeat center center fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-.masthead32{
-  position: relative;
-  width: 100%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background:url('/media/piper-hero.jpg') no-repeat center center fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-.masthead31{
-  position: relative;
-  width: 100%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background:url('/media/lou-hero.jpg') no-repeat center center fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-.masthead30{
-  position: relative;
-  width: 100%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background:url('/media/burrow-hero.jpg') no-repeat center center fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-.masthead29{
-  position: relative;
-  width: 100%;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background:url('/media/baoo.jpg') no-repeat center center fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
+
 .masthead28{
   position: relative;
   width: 100%;
@@ -12151,6 +12042,9 @@ body {
     border-width: 0.25rem;
     width: 30%;
   }
+  body{
+    font-size:1rem!important;
+  }
 }
 
 .signup-section {
@@ -12420,7 +12314,7 @@ body {
   -webkit-border-radius: 0px;
   border-radius: 0px;
   background: #ffffff;
-  height:1300px;
+  height:1400px;
 }
 .background{
   position: relative;

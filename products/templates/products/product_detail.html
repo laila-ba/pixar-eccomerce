@@ -91,14 +91,14 @@
                         </div>
 
                         <div class="col-12" id="product-btn">
-                            <a href="{% url 'products' %}" class="btn btn-outline-primary"style="color: #4CB3FF !important; background-color: #fff !important; border-color: #4CB3FF!important;border-radius:50px;">
+                            <a href="{% url 'products' %}" class="btn btn-outline-primary"style="color: #4CB3FF !important; background-color: #fff !important; margin-bottom:1rem; border-color: #4CB3FF!important;border-radius:50px;">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
                             <input type="submit" class="btn btn-outline-primary"
-                            style="color: #fff !important; background-color: #4CB3FF !important; border-color:#fff !important;border-radius:50px;"
+                            style="color: #fff !important; background-color: #4CB3FF !important; border-color:#fff !important;margin-bottom:1rem;border-radius:50px;"
                                 value="Add to Bag">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
