@@ -151,8 +151,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .message-container {
   position: fixed;
   top: 72px;
-  right: 15px;
   z-index: 99999999999;
+  width:280px;
 }
 
 .custom-toast {
@@ -11886,9 +11886,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 14px !important;
 }
-.content-section {
-  padding-bottom: 7.5rem;
-}
+
 .portfolio-item {
   display: block;
   position: relative;
@@ -12044,6 +12042,9 @@ body {
   }
   body{
     font-size:1rem!important;
+  }
+  .text{
+    font-size: 22px!important;
   }
 }
 
@@ -12314,7 +12315,7 @@ body {
   -webkit-border-radius: 0px;
   border-radius: 0px;
   background: #ffffff;
-  height:1400px;
+  height:100%;
 }
 .background{
   position: relative;
@@ -12346,7 +12347,6 @@ footer{
   width:100%;
   position: relative;
   height:2.5rem;   /* Height of the footer */
-  margin-top:60px;
 }
 
 .card1{
@@ -12355,7 +12355,6 @@ footer{
   background: #ffffff;
 align-items: center;
   padding-top: 60px;
-  padding-bottom: 60px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: #ffffff;
@@ -12499,7 +12498,7 @@ align-items: center;
   font-family: Josefin sans;
   font-weight: 400;
     font-style: normal;
-    font-size: 22px;
+    font-size: 15px;
     letter-spacing: 0em;
     line-height: 1.7em;
     text-transform: none;
