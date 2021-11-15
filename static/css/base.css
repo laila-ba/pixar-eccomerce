@@ -12355,8 +12355,6 @@ footer{
   background: #ffffff;
 align-items: center;
   padding-top: 60px;
-  padding-left: 50px;
-  padding-right: 50px;
   background-color: #ffffff;
   margin: 0 auto;
 }
@@ -12511,11 +12509,3 @@ align-items: center;
   letter-spacing: 0.4rem;
   margin-top:4rem;
 }
-@media screen and (max-width: 400px) {
-  .background .container.mb-2 {
-  transform: scale(0.8);
-  position: absolute;
-  left: 0;
-  top: 0;
-  }
-  }
