@@ -9,9 +9,9 @@ This website is based off of the one and only, Disney Pixar site. Ive always bee
 # Table of Contents
 
 
-1. [User Experience](# UX)
-    i. [The Strategy Plane](## The Strategy Plane)
-        - [User Stories](### User Stories)
+1. - [User Experience](#UX)
+        - [The Strategy Plane](##The-Strategy-Plane)
+        - [User Stories](###User-Stories)
     
     ii. [The Scope Plane](## The Scope Plane)
     iii. [The Structure Plane](## The Structure Plane)
@@ -27,7 +27,7 @@ This website is based off of the one and only, Disney Pixar site. Ive always bee
     - [Features Specific To Pages](## Features Specific To Pages)
 
 
-# User Experience (UX)
+# UX
 ## The Strategy Plane
 
 Pixar's film taget audience are very wide as its a universal studio that everyone loves, and therefore doesnt have a niche, specific audience. I wanted to project this through my site so that a large demograpic can easily access the webiste without any difficulty.
@@ -172,10 +172,106 @@ The structure of my site is outlined below.
 
 
 ## The Skeleton Plane
+### Wireframes
+<details>
+  <summary>Home</summary>
+  <img src="readme-docs/home.png">
+</details>
+<details>
+  <summary>Films </summary>
+  <img src="readme-docs/films.png">
+</details>
+<details>
+  <summary>Films details </summary>
+  <img src="readme-docs/film-detail.png">
+</details>
+<details>
+  <summary>Shop </summary>
+  <img src="readme-docs/shop.png">
+</details>
+<details>
+  <summary>Login </summary>
+  <img src="readme-docs/login.png">
+</details>
+<details>
+  <summary>Register </summary>
+  <img src="readme-docs/register.png">
+</details>
+<details>
+  <summary>Profile </summary>
+  <img src="readme-docs/profile.png">
+</details>
+<details>
+  <summary>Product Details </summary>
+  <img src="readme-docs/product_detail.png">
+</details>
+<details>
+  <summary>Add product(Admin) </summary>
+  <img src="readme-docs/add.png">
+</details>
+<details>
+  <summary>Checkout </summary>
+  <img src="readme-docs/checkout.png">
+</details>
+<details>
+  <summary>Checkout Success</summary>
+  <img src="readme-docs/checkout_success.png">
+</details>
+<details>
+  <summary>Bag</summary>
+  <img src="readme-docs/bag.png">
+</details>
     
+### Mockups
     
-    
-
+<details>
+  <summary>Home</summary>
+  <img src="readme-docs/Home-m.png">
+</details>
+<details>
+  <summary>Films</summary>
+  <img src="readme-docs/feature films-m.png">
+</details>
+<details>
+  <summary>Film Details</summary>
+  <img src="readme-docs/Film details-m.png">
+</details>
+<details>
+  <summary>Shop</summary>
+  <img src="readme-docs/shop-m.png">
+</details>
+<details>
+  <summary>Login</summary>
+  <img src="readme-docs/login-m.png">
+</details>
+<details>
+  <summary>Register</summary>
+  <img src="readme-docs/register-m.png">
+</details>
+<details>
+  <summary>Profile</summary>
+  <img src="readme-docs/profile-m.png">
+</details>
+<details>
+  <summary>Product Details</summary>
+  <img src="readme-docs/product-details-m.png">
+</details>
+<details>
+  <summary>Add Product(Admin)</summary>
+  <img src="readme-docs/admin.png">
+</details>
+<details>
+  <summary>Checkout</summary>
+  <img src="readme-docs/checkout-m.png">
+</details>
+<details>
+  <summary>Checkout Success</summary>
+  <img src="readme-docs/checkout-success-m.png">
+</details>
+<details>
+  <summary>Bag</summary>
+  <img src="readme-docs/bag-m.png">
+</details>
 
 
         
