@@ -273,6 +273,14 @@ The structure of my site is outlined below.
   <img src="readme-docs/bag-m.png">
 </details>
 
-
-        
+## Surface Plane
+- ### Color Scheme
+  - The color scheme chosen for this project is simple, branching from one primary color: Blue. As the site mainly consists of vibrant images, i thought sticking to various shades of blue would go veyr nicely.
     
+    COLOR SCHEME IMAGE
+
+- ### Typography
+  - This site uses a variation of two different fonts: Josephin sans & sans-serif.  I chose these two fonts as i took time to compare the fints used on the Pixar site and find something a little similar. I found that when adding letter spacing to these two fonts, it enahnced the simplicity of the site while still appearing similar to the Pixar site.
+
+- ### Imagery
+  - Imagery is a huge part of the site and is critical to the users as Pixar fans are most appreciative of the clean and shiny graphics. Its used for both informative and entertainmenet purposes as images are displayed in item cards on the products template to allow users to visually engage with items and decide if they are interested to purchase. Images are also shown for aesthetic to bring in the magical and nostalgic feel that Pixar films have. I have encorporated atleast one image on every page to keep the feel ongoing throught the site. Product images have to been taken from the Disney Site and others have been created and edited through Canva.
