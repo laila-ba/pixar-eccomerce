@@ -320,3 +320,7 @@ The structure of my site is outlined below.
     On the bottom right of the page, a back to top button is shown with a blue arrow to assist the user to scroll up quicker when they have reached near the bottom. This back to top button is visible and available to be clicked on at all times.
 
   - #### Film details Page
+    - A large hero image from the chosen film and the film's logo is below.
+    - A short summary of the film's plot to perhaps remind the user what the film is about.
+    - The films trailer can be played on the page without the user leaving to go to Youtube. The trailer can be played and paused at anytime and can also be viewed in full screen. This is responsive on all devices
+    
