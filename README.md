@@ -282,5 +282,41 @@ The structure of my site is outlined below.
 - ### Typography
   - This site uses a variation of two different fonts: Josephin sans & sans-serif.  I chose these two fonts as i took time to compare the fints used on the Pixar site and find something a little similar. I found that when adding letter spacing to these two fonts, it enahnced the simplicity of the site while still appearing similar to the Pixar site.
 
+  TYPO IMAGE
+
 - ### Imagery
-  - Imagery is a huge part of the site and is critical to the users as Pixar fans are most appreciative of the clean and shiny graphics. Its used for both informative and entertainmenet purposes as images are displayed in item cards on the products template to allow users to visually engage with items and decide if they are interested to purchase. Images are also shown for aesthetic to bring in the magical and nostalgic feel that Pixar films have. I have encorporated atleast one image on every page to keep the feel ongoing throught the site. Product images have to been taken from the Disney Site and others have been created and edited through Canva.
+  - Imagery is a huge part of the site and is critical to the users as Pixar fans are most appreciative of the clean and shiny graphics. Its used for both informative and entertainmenet purposes as images are displayed in item cards on the products template to allow users to visually engage with items and decide if they are interested to purchase. Images are also shown for aesthetic to bring in the magical and nostalgic feel that Pixar films have.Background images are used a lot throughout the site, the main one being Disney's famous blue sky thats used for their logo and intro to their films. I felt that by encourporating this in images, (as Pixar is one of Disney's brances) and making the colours a part of my site, it enhances the magical, nostalgic theme that my site gives off. I have made sure encorporated atleast one image on every page to keep the feel ongoing throught the site. Product images have been taken from the Disney Site and others have been created and edited through Canva.
+
+  IMAGERY IMAGE
+
+## Features
+### Common Features Across All Pages
+
+  - #### Header
+    - The header is positioned to be fixed at the top of the screen and to always be visible to the user, no matter what screen size or device is being used. This allows an easy and seamless navigation across all pages, meaning that users can find it quickly.
+    - The pixar logo is positioned at the top of the page within the header and when clicked on, redirect you to the home page. The logo is visible in the header when viewed on all screen sizes.
+    - The navigation is inside of the header, seen on the right of the header. The pages consist of: Home, films, shop, account and bag. Both shop and account are dropdown menus, revealing more links. The 'shop' link, reveals 'Toys, Adult, Clothing, All Products' and the 'Account' link reveals 'Login, Register' for site visitors, 'Profile' for account holders, and 'Product Management' for the admin profiles. On smaller screens, the navigation collapses into a hamburger menu. This allows the site navigation to be easy and simple to use on all devices.
+    - The bag icon is always visible on larger screens, however collapsed into a hamburger menu when on smaller screens. On the Hamburer menu, the bag is centered, standing out from the other links, and easily accessed as the header is fixed.
+  - #### Buttons
+    - There are two types of buttons throughout the site, both in the same style, just contrasting colours. E.g: one has white text and a blue backgound whereas the other has blue text, blue border and white text. These buttons mostly appear next to eachother when the user is given two options, e.g: 'keep shopping' and 'add to bag'.
+  - #### Headings
+    - Headings throughout the site appear the same in order for the structure to be easily recognised by the user. The font is always 'Josefin sans' and the letter spacing is constant throughout so that the heading can visibly appear different to the rest of the page and not just be different in size.
+  - #### Footer
+    - The footer is displayed at the bottom of the page and appears simplistic, corresponding the the colour scheme. It includes a hover effect for every individual social link, when hovered over, an icon appears over the social link and the color changed to the social medias logo colour. Eg: for the Facebook icon, it will turn blue, with an icon above saying 'Facebook'.
+  - #### Toasts 
+    - The toasts appear to let the user know that they have carried out an action, and whether it was successful. Eg: putting an item in your bag, a message appears showing the user their total of the bag, how much more they need before they get free delivery, and a checkout button. It appears as a pop up message underneath the navigation bar on the right on all devices and can be dismissed by clicking on the 'x' button.
+
+### Features Specific To Pages
+  - #### Home Page
+    - A large hero image of a well known scene in a Pixar movie. 
+    - The heading is a large motivational quote from the movie.
+    - Th quote is followed by a 'discover' button that takes the user to the films page to explore their range of feature films.
+    - Below the hero image are four cards that are essentially a quick navigation. The cards each have an image on them and a heading to where they redirect to. When each card is hovered over, they scale down and become smaller while covering the card in a house colour background. One of the cards redirects the user to a contact page which isnt shown on the navigation bar. I thought this would be best as i didnt want the nav bar to be overwhelmingly crowded and keep the simplicity flowing through the site. 
+
+  - #### Films Page
+    - A large hero image from a Pixar movie with the title of 'FEATURE FILMS'.This lets the user know that these are the main films that Pixar have created.
+    - All feature films are diplayed in rows of 3, showing film posters against a white background. The white background works well as each poster includes various vibrant colours and so the white background allows them to stand out more.
+    - The films are shown in order, from latest to oldest.
+    On the bottom right of the page, a back to top button is shown with a blue arrow to assist the user to scroll up quicker when they have reached near the bottom. This back to top button is visible and available to be clicked on at all times.
+
+  - #### Film details Page
