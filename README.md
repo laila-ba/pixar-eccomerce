@@ -317,10 +317,65 @@ The structure of my site is outlined below.
     - A large hero image from a Pixar movie with the title of 'FEATURE FILMS'.This lets the user know that these are the main films that Pixar have created.
     - All feature films are diplayed in rows of 3, showing film posters against a white background. The white background works well as each poster includes various vibrant colours and so the white background allows them to stand out more.
     - The films are shown in order, from latest to oldest.
-    On the bottom right of the page, a back to top button is shown with a blue arrow to assist the user to scroll up quicker when they have reached near the bottom. This back to top button is visible and available to be clicked on at all times.
+    - On the bottom right of the page, a back to top button is shown with a blue arrow to assist the user to scroll up quicker when they have reached near the bottom. This back to top button is visible and available to be clicked on at all times.
 
   - #### Film details Page
     - A large hero image from the chosen film and the film's logo is below.
     - A short summary of the film's plot to perhaps remind the user what the film is about.
-    - The films trailer can be played on the page without the user leaving to go to Youtube. The trailer can be played and paused at anytime and can also be viewed in full screen. This is responsive on all devices
-    
+    - The films trailer can be played on the page without the user leaving to go to Youtube. The trailer can be played and paused at anytime and can also be viewed in full screen. This is responsive on all devices.
+    - A heading of the charcters names, followed by their images and a short summary. This is done for each character.
+    - A back to top button for the user to navigate around easily.
+
+  - #### Shop Page
+    - A large hero image with the title of 'SHOP' followed by a smaller sub-heading.
+    - A search bar enabling shoppers to search for a specific item quickly.
+    - Items displayed in a responsive grid layout to be responsive on all screen sizes.
+    - The image of items are above important information such as the items title, price, category and rating.
+    - Item image can be clicked to bring the user to the details page.
+    - Filter button is available and can be toggled to collapse or reveal sorting options.
+  
+  - #### Products Detail Page
+    - Shows both product and descriptiom info on a responsive grid layout to accommodate all screen sizes.
+    - Product image is large, and when clicked on, the image opens up in a seperate tab.
+    - Product title, price, category, rating and description is available.
+    - Shoppers are able to chose the quantity they want to put in their bag for that product.
+    - A 'keep shopping' button is available for users to navigate back to the shop page quickly. 
+    - A 'add to bag' button allows users to add products to their bag efficiently.
+
+  - #### Login & Register page
+    - Both these pages have the same layout in order to have a clear design structure.
+    - login and register form are displayed on a card with an image alongside the form. 
+    - Register form enables users to register with an email which they must confirm after, and a password that fits within the requirements.
+    - Register page has two buttons at the bottom: 'back to login' which takes them to the login page incase they already have an account, and a sign up button which then asks them to verify their email.
+    - The login page has two buttons at the bottom: 'home' which offers the user easy navigation for them to be redirected to the home page and 'sign in' which takes the user to the home page and giving them a message notification to let them know that they are signed in.
+
+  - #### Bag page
+    - When the bag is empty, an image apears with a Pixar character crying and some text saying that their bag is empty. Below this, there is a 'shop' button enabling the user to be redirected to the products page to fill up their bag.
+    - When the bag has products inside, the product info appears alongside the quantity chosen, subtotal and delivery cost. 
+    - Two buttons are placed under the quantity button : 'update' and 'remove'. These allow the user to edit any items in their basket; they can increase or decrease the amount they already have, and they can delete items.
+    - There are two buttons at the bottom of the page: 'Keep shopping' and 'secure checkout' which offer easy navigation for the user to the products page or to the checkout page.
+
+  - #### Delivery/Checkout Page
+   - The shoppers order summary is diplayed on the right and the users details will be displayed on the left as a form layout. This allows the user to edit and add their details to the delivery. On smaller screen sizes, the order summary is shown first and below is the details form.
+   - Delivery Details are provided as a form using crispy forms.
+   - Users are given the option to save their delivery details to their profile if they have one,  otherwise, they are offered sign in and sign up buttons.
+   - Users are provided with a secure checkout using stripe to enter their bank details.
+
+  - #### Checkout Success Page
+    - A thank you image is displayed at the top of the page.
+    - The user is presented with their order information alongisde a confirmation email being sent to them.
+    - A button at the bottom of the information: 'keep shopping'.
+
+  - #### Profile Page
+    - A form is diplayed with the users default delivery information and can be edited and updated for checkout. 
+    - The shoppers order history is diplayed on the right, showing their order number, date, items and order total.
+    - The users are able to click on a past order's confirmation number and it will take them to the checkout success page. However, they are displayed a message at the top of the screen alerting them that it is a past order.
+
+  - #### Product management page (admin)
+    - The *'add a product'* page allows the admin to fill out a form to add a product to appear in the products page and for shoppers to be able to purchase it. Th admin can create a description, rating, price title, category, sizes, image url or upload an image from their local device.
+    - The *'edit a product'* page allows the admin to edit a product in any aspect. The category, sku, name, description, sizes, price,rating and image can all be edited and changed from the shop page.
+    - Products can be deleted by the admin from the products page. Besides every product, is two button links: 'edit' and 'delete'
+
+  ### Future Features to Add
+    - Add different type of delivery options to chose from other than a default delivery.
+    - Add an apple pay option to payements

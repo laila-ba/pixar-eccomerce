@@ -10,17 +10,16 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container">
+<div class="background">
+    <div class="container mb-2 "style="margin-top:10rem;">
         <div class="row">
-            <div class="col-12 col-md-6">
-                <hr>
-                <h2 class="logo-font mb-4">Product Management</h2>
-                <h5 class="text-muted">Edit a Product</h5>
-                <hr>
-            </div>
-        </div>
-
+            <div class="col card1">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center logo-font"style="font-size:2rem;margin-bottom:5rem;">Product Management</h2>
+                        <h5 class="text-muted">Edit a Product</h5>
+                    </div>
+                </div> 
         <div class="row">
             <div class="col-12 col-md-6">
                 <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
@@ -32,7 +31,7 @@
                             {{ field }}
                         {% endif %}
                     {% endfor %}
-                    <div class="text-right">
+                    <div class="text-right" style="margin-bottom:2rem;">
                         <a class="btn"style="color: #4CB3FF !important; background-color: #fff !important; border-color: #4CB3FF!important;border-radius:50px;"href="{% url 'products' %}">Cancel</a>
                         <button type="submit" class="btn btn-outline" style="color: #fff !important; background-color: #4CB3FF !important; border-color:#fff !important;border-radius:50px;">Update Product</button>
                     </div>
@@ -40,4 +39,6 @@
             </div>            
         </div>
     </div>
+</div>
 {% endblock %}
+</div>
