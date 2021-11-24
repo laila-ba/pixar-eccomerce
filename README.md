@@ -411,7 +411,7 @@ The structure of my site is outlined below.
     - When a new user registers successfully, their profile is created automatically.
 
   - ### Log Out / Log in
-    - A validation error will appear if username/e-mail and/or password were incorrect.It doesnt specify which field is incorrect so that malicious users don't know specifically which field was incorrect.
+    - A validation error will appear if username/e-mail and/or password were incorrect. It doesnt specify which field is incorrect so that malicious users don't know specifically which field was incorrect.
     - Users can log in using their existing Pixar Account.
     - The login validation form will display a validation message if either password or username/e-mail are left empty.
     - If the user clicks on 'Forgot Password', they are navigated to a page where they are asked to enter their e-mail address. They will then receive an e-mail with a link to reset the password and also remind them what their username is. When the link is clicked, the user is asked to enter the new password twice. If this is successful, the user is navigated to a success page with a button to redirect the user back to the login.
@@ -438,3 +438,55 @@ The structure of my site is outlined below.
   - All products within the page are laid out in a grid design, making it responsive on any device.Items appear in rows of 4 on large screens, 3 n medium, 2 on small, and 1 item per row is shown on normal mobile view.
   - Each product has a visible image, rating ,title, price and category.
   - When an Item's image is clicked, the user is redirected to the item's page where they can add to their bag.
+
+- ### Product Details Page
+  - The product detail page displays the product image on the left side and the product title, pice, category, rating and description on the other side. 
+  - The Page also includes the avaiblable sizes for the user to chose from and a quantity toggle button that increases and decreases when the user clicks -/+. 
+  - The user can only choose a max of 10 in quantity of an item otherwiase they will get an error.
+  - The layout is repsonsive on all devices and the image and details move all to one column when viewed on mobile view.
+  - Below the page, there is an 'add to bag' button that allows the user to add the item to their bag. A ag notification then appears, letting the user know that the item has been added.
+  - The 'keep shopping' button redirect the user back to the products page.
+  - When main image of product is clicked on, a seperate tab is opened with the individual image alone.
+
+- ### Film Page
+  - Films are shown in a layout grid of 3 posters per row. This is responsive across all devices as images decrese in size when viewed on smaller devices.
+  - The back to top button is always displayed at the bottom right of the page, and when clicked on, takes the user to the top of the page making navigation easier and smoother.
+  - When film posters are clicked on, the user is redirected to the relevant film details page.
+
+- ### Film Details Pages
+  - The film details pages include a relevant summary of each individual film.
+  - A trailer video of the specific film. When the user clicks on the play button, The films trailer can be played on the page without the user leaving to go to Youtube. The trailer can be played and paused at anytime and can also be viewed in full screen. This is responsive on all devices.
+  - The trailer can also be watched on youtube if the user clicks on the youtube logo on the video as a new tab opens up with the relevant video.
+  - Each film details page includes images of all relevant charcters and a summary of them.
+  - The back to top button is always displayed at the bottom right of the page, and when clicked on, takes the user to the top of the page making navigation easier and smoother.
+
+- ### Bag page & toasts
+  - When a user adds an itm to their bag, it is added to the bag and a notification appears letting the user know it is in their bag. The bag icon total also updates on the navigation bar.
+  - Within the notification toast, the user is able to see the item/items image,price, quantity, and total thatthey have added.
+  - When the user updates the items quantity or deletes an item from the bag, a toast appears showing the current bag total and a message letting the user know that they have done so successfully.
+  - From bag toast, if the user clicks on 'Secure checkout', they are navigated to the Shopping bag page.
+  - From the bag toast, when 'Secure Checkout' is clicked, the user is navigated to the checkout page.
+  - If the last item was removed from the bag, page refreshes, the bag is diplayed as empty  and the toast appears, telling the user that they have removed the item.
+  - If a bag is empty, an image appears alongisde a 'hey you!' title telling the user that their bag is empty. There is a button below syaing 'Shop' which will redirect the user to the shop page where they can add items to their bag.
+  - Users can be redirected to the bag page from the navbar, bag toast, or checkout page.
+  - If the user has items in their bag, they are able to view a summary of their items alongisde the image, title,size chosen, SKU, quantity subtotal, delivery fee and a message informing the user how much more they need to spend to get free delivery.
+  - When the 'remove' button is clicked, the item is removed from the bag.
+  - When the quantity toggle +/- button is clicked on, the quantity changes and when the user clicks on the 'update' button, the quantity is updated. This refreshes the page and aslo updates the subtotal and if there is any, the delivery fee.
+
+- ### Checkout & checkout success Page
+  - The checkout page displays the order summary, Delivery, Shipping, and Payment Info form.
+  - Within the details form, all fields are required to be filled in except from the 'street address 2' 'county' and 'post code'. 
+  - When required fields are not filled out,validation will prompt the user to fill it in.
+  - If the user enters invalid card details, Stripe will return an error message for the user to try again.
+  - When the form has been filled out correctly, and the user clicks on 'complete order', they are displayed with a loading spinner where they are not able to click on anything within the page until the payement has succeeded. The user is then are re-directed to the Checkout Success page where they can see their order details and confirmation email has been sent.
+  - If the user is not logged in, they can log in or sign up using the links under the Delivery Form in order to save their delivery information.
+  - If the user is logged in already, they are given an option to save their shipping details to their profile with a checkbox.
+
+- ### Profile Page
+  - The profile page is only accessible to authenticated users who have made accounts. It can be accessed through the 'my account' dropdwon menu in the navigation bar.
+  - Users can fill out the form to save their delivery information to become default when checking out.
+  - The user is able to edit the default information in the form and save them in the database byt clicking 'update information'.
+  - Users are able to view their order history from their profile account underneath the title 'order history'.
+  - Within the order history, users are able to view their order number, the date and time of the purchase, the items and their quantity, and the order total.
+  - Orders in the order history are shown in order from oldest to latest.
+  - The users are able to click on a past order's confirmation number and it will take them to the checkout success page. However, they are displayed a message at the top of the screen alerting them that it is a past order.
