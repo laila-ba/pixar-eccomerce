@@ -3,136 +3,156 @@
 
 {% block page_header %}
 <header class="masthead3">
-    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-        <div class="d-flex justify-content-center">
-            <div class="text-center">
-                <h1 class="mx-auto text-uppercase" style="margin-top:10rem;">Feature films</h1>
-            </div>
-        </div>
+  <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+    <div class="d-flex justify-content-center">
+      <div class="text-center">
+        <h1 class="mx-auto text-uppercase" style="margin-top:10rem;">Feature films</h1>
+      </div>
     </div>
+  </div>
 </header>
 {% endblock %}
 
 {% block content %}
-<div class="container"> 
-  <div class = "row">
+<div class="container">
+  <div class="row">
     <div class="d-flex justify-content-around " style="margin-top:5rem;">
-          <div class="text-center col-sm">
-            <a href="{% url 'luca' %}"><img src="{{ MEDIA_URL }}luca.jpg" class="img-fluid" style="width:70%;" alt="luca"></a>
-          </div>
-          <div class="text-center col-sm">
-            <a href="{% url 'soul' %}"><img src="{{ MEDIA_URL }}soul.jpg" class="img-fluid" style="width:70%;" alt="soul"></a>
-          </div>
-          <div class="text-center col-sm">
-            <a href="{% url 'onward' %}"><img src="{{ MEDIA_URL }}onward.jpg" class="img-fluid" style="width:70%;" alt="onward"></a>
-          </div>
-      </div>
-  </div>
-  <div class = "row">
-    <div class="d-flex justify-content-around" style="margin-top:5rem;">
       <div class="text-center col-sm">
-        <a href="{% url 'toy4' %}"><img src="{{ MEDIA_URL }}toy4.jpg" class="img-fluid" style="width:70%;" alt="toy4"></a>
+        <a href="{% url 'luca' %}"><img src="{{ MEDIA_URL }}luca.jpg" class="img-fluid" style="width:70%;"
+            alt="luca"></a>
       </div>
       <div class="text-center col-sm">
-        <a href="{% url 'i2' %}"><img src="{{ MEDIA_URL }}i2.png" class="img-fluid" style="width:70%;" alt="incredibles2"></a>
+        <a href="{% url 'soul' %}"><img src="{{ MEDIA_URL }}soul.jpg" class="img-fluid" style="width:70%;"
+            alt="soul"></a>
       </div>
       <div class="text-center col-sm">
-        <a href="{% url 'coco' %}"><img src="{{ MEDIA_URL }}coco.jpg" class="img-fluid" style="width:70%;" alt="coco"></a>
+        <a href="{% url 'onward' %}"><img src="{{ MEDIA_URL }}onward.jpg" class="img-fluid" style="width:70%;"
+            alt="onward"></a>
       </div>
     </div>
   </div>
-  <div class = "row">
+  <div class="row">
     <div class="d-flex justify-content-around" style="margin-top:5rem;">
-      <div class="text-center col3">
-        <a href="{% url 'cars3' %}"><img src="{{ MEDIA_URL }}cars3.jpg" class="img-fluid" style="width:70%;" alt="cars3"></a>
+      <div class="text-center col-sm">
+        <a href="{% url 'toy4' %}"><img src="{{ MEDIA_URL }}toy4.jpg" class="img-fluid" style="width:70%;"
+            alt="toy4"></a>
       </div>
-      <div class="text-center col3">
-        <a href="{% url 'dory' %}"><img src="{{ MEDIA_URL }}dory2.jpg" class="img-fluid" style="width:70%;" alt="dory"></a>
+      <div class="text-center col-sm">
+        <a href="{% url 'i2' %}"><img src="{{ MEDIA_URL }}i2.png" class="img-fluid" style="width:70%;"
+            alt="incredibles2"></a>
       </div>
-      <div class="text-center col3">
-        <a href="{% url 'dino' %}"><img src="{{ MEDIA_URL }}dino.jpg" class="img-fluid" style="width:70%;" alt="dino"></a>
+      <div class="text-center col-sm">
+        <a href="{% url 'coco' %}"><img src="{{ MEDIA_URL }}coco.jpg" class="img-fluid" style="width:70%;"
+            alt="coco"></a>
       </div>
     </div>
   </div>
-  <div class = "row">
+  <div class="row">
     <div class="d-flex justify-content-around" style="margin-top:5rem;">
       <div class="text-center col3">
-        <a href="{% url 'io' %}"><img src="{{ MEDIA_URL }}io.jpg" class="img-fluid" style="width:70%;" alt="inside-out"></a>
+        <a href="{% url 'cars3' %}"><img src="{{ MEDIA_URL }}cars3.jpg" class="img-fluid" style="width:70%;"
+            alt="cars3"></a>
+      </div>
+      <div class="text-center col3">
+        <a href="{% url 'dory' %}"><img src="{{ MEDIA_URL }}dory2.jpg" class="img-fluid" style="width:70%;"
+            alt="dory"></a>
+      </div>
+      <div class="text-center col3">
+        <a href="{% url 'dino' %}"><img src="{{ MEDIA_URL }}dino.jpg" class="img-fluid" style="width:70%;"
+            alt="dino"></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="d-flex justify-content-around" style="margin-top:5rem;">
+      <div class="text-center col3">
+        <a href="{% url 'io' %}"><img src="{{ MEDIA_URL }}io.jpg" class="img-fluid" style="width:70%;"
+            alt="inside-out"></a>
       </div>
       <div class="text-center col3">
         <a href="{% url 'mu' %}"><img src="{{ MEDIA_URL }}MU.jpg" class="img-fluid" style="width:70%;" alt="MU"></a>
       </div>
       <div class="text-center col3">
-        <a href="{% url 'brave' %}"><img src="{{ MEDIA_URL }}brave.jpg" class="img-fluid" style="width:70%;" alt="brave"></a>
+        <a href="{% url 'brave' %}"><img src="{{ MEDIA_URL }}brave.jpg" class="img-fluid" style="width:70%;"
+            alt="brave"></a>
       </div>
     </div>
   </div>
-  <div class = "row">
+  <div class="row">
     <div class="d-flex justify-content-around" style="margin-top:5rem;">
       <div class="text-center col3">
-        <a href="{% url 'cars2' %}"><img src="{{ MEDIA_URL }}cars2.jpg" class="img-fluid" style="width:70%;" alt="cars2"></a>
+        <a href="{% url 'cars2' %}"><img src="{{ MEDIA_URL }}cars2.jpg" class="img-fluid" style="width:70%;"
+            alt="cars2"></a>
       </div>
       <div class="text-center col3">
-        <a href="{% url 'toy3' %}"><img src="{{ MEDIA_URL }}toy3.jpg" class="img-fluid" style="width:70%;" alt="toy-story-3"></a>
+        <a href="{% url 'toy3' %}"><img src="{{ MEDIA_URL }}toy3.jpg" class="img-fluid" style="width:70%;"
+            alt="toy-story-3"></a>
       </div>
       <div class="text-center col3">
         <a href="{% url 'up' %}"><img src="{{ MEDIA_URL }}up2.jpg" class="img-fluid" style="width:70%;" alt="up"></a>
       </div>
-    </div>  
-  </div> 
-  <div class = "row">
-    <div class="d-flex justify-content-around" style="margin-top:5rem;"> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="d-flex justify-content-around" style="margin-top:5rem;">
       <div class="text-center col3">
-        <a href="{% url 'walle' %}"><img src="{{ MEDIA_URL }}walle.jpg" class="img-fluid" style="width:70%;" alt="walle"></a>
+        <a href="{% url 'walle' %}"><img src="{{ MEDIA_URL }}walle.jpg" class="img-fluid" style="width:70%;"
+            alt="walle"></a>
       </div>
       <div class="text-center col3">
         <a href="{% url 'rat' %}"><img src="{{ MEDIA_URL }}rat.jpg" class="img-fluid" style="width:70%;" alt="rat"></a>
       </div>
       <div class="text-center col3">
-        <a href="{% url 'cars' %}"><img src="{{ MEDIA_URL }}cars.jpg" class="img-fluid" style="width:70%;" alt="cars"></a>
+        <a href="{% url 'cars' %}"><img src="{{ MEDIA_URL }}cars.jpg" class="img-fluid" style="width:70%;"
+            alt="cars"></a>
       </div>
     </div>
   </div>
-  <div class = "row">
+  <div class="row">
     <div class="d-flex justify-content-around" style="margin-top:5rem;">
       <div class="text-center col3">
-        <a href="{% url 'incredibles' %}"><img src="{{ MEDIA_URL }}incredibles.jpg" class="img-fluid" style="width:70%;" alt="incredibles"></a>
-      </div> 
+        <a href="{% url 'incredibles' %}"><img src="{{ MEDIA_URL }}incredibles.jpg" class="img-fluid" style="width:70%;"
+            alt="incredibles"></a>
+      </div>
       <div class="text-center col3">
-        <a href="{% url 'nemo' %}"><img src="{{ MEDIA_URL }}nemo.jpg" class="img-fluid" style="width:70%;" alt="nemo"></a>
-      </div>  
+        <a href="{% url 'nemo' %}"><img src="{{ MEDIA_URL }}nemo.jpg" class="img-fluid" style="width:70%;"
+            alt="nemo"></a>
+      </div>
       <div class="text-center col3">
-        <a href="{% url 'monsters' %}"><img src="{{ MEDIA_URL }}monsters.jpg" class="img-fluid" style="width:70%;" alt="monsters"></a>
-      </div> 
-    </div> 
-  </div> 
-  <div class = "row">
-    <div class="d-flex justify-content-around" style="margin-top:5rem;">
-      <div class="text-center col3">
-        <a href="{% url 'toy2' %}"><img src="{{ MEDIA_URL }}toy2.jpg" class="img-fluid" style="width:70%;" alt="toy-story-2"></a>
-      </div> 
-      <div class="text-center col3">
-        <a href="{% url 'bug' %}"><img src="{{ MEDIA_URL }}bug.jpg" class="img-fluid" style="width:70%;" alt="bugs-life"></a>
-      </div> 
-      <div class="text-center col3">
-        <a href="{% url 'toy1' %}"><img src="{{ MEDIA_URL }}toy1.jpg" class="img-fluid" style="width:70%;" alt="toy-story-1"></a>
-      </div> 
+        <a href="{% url 'monsters' %}"><img src="{{ MEDIA_URL }}monsters.jpg" class="img-fluid" style="width:70%;"
+            alt="monsters"></a>
+      </div>
     </div>
   </div>
-</div>
+  <div class="row">
+    <div class="d-flex justify-content-around" style="margin-top:5rem;">
+      <div class="text-center col3">
+        <a href="{% url 'toy2' %}"><img src="{{ MEDIA_URL }}toy2.jpg" class="img-fluid" style="width:70%;"
+            alt="toy-story-2"></a>
+      </div>
+      <div class="text-center col3">
+        <a href="{% url 'bug' %}"><img src="{{ MEDIA_URL }}bug.jpg" class="img-fluid" style="width:70%;"
+            alt="bugs-life"></a>
+      </div>
+      <div class="text-center col3">
+        <a href="{% url 'toy1' %}"><img src="{{ MEDIA_URL }}toy1.jpg" class="img-fluid" style="width:70%;"
+            alt="toy-story-1"></a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="btt-button shadow-sm rounded-0 border-black">
   <a class="btt-link d-flex h-100">
-      <i class="fas fa-arrow-up  mx-auto my-auto" style="color:#4CB3FF;"></i>
-  </a>	
+    <i class="fas fa-arrow-up  mx-auto my-auto" style="color:#4CB3FF;"></i>
+  </a>
 </div>
 {% endblock %}
 {% block postloadjs %}
-  {{ block.super }}
-  <script type="text/javascript">
-  $('.btt-link').click(function(e) {
-    window.scrollTo(0,0)
+{{ block.super }}
+<script type="text/javascript">
+  $('.btt-link').click(function (e) {
+    window.scrollTo(0, 0)
   })
 </script>
 {% endblock %}

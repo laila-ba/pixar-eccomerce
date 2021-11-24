@@ -8,9 +8,8 @@
             <div class="text-center">
                 <h1 class="mx-auto my-0 text-uppercase">Adventure</h1>
                 <h2 class="mx-auto my-0 text-uppercase">is out there</h2>
-                <a href="{% url 'films' %}">
-                <button type="button" href="{% url 'films' %}" class="btn btn-outline-light"style="border-radius:50px;">DISCOVER</button>
-            </a>
+                <a href="{% url 'films' %}"><button type="button" class="btn btn-outline-light"
+                        style="border-radius:50px;">DISCOVER</button></a>
             </div>
         </div>
     </div>
@@ -24,7 +23,7 @@
                 <a class="portfolio-item" href="{% url 'films' %}">
                     <div class="caption">
                         <div class="caption-content">
-                            <div class="h2 btn btn-outline"style="color: #fff !important; ">FILMS</div>
+                            <div class="h2 btn btn-outline" style="color: #fff !important; ">FILMS</div>
                         </div>
                     </div>
                     <img class="img-fluid" src="{{ MEDIA_URL }}up.jpg" alt="..." />
@@ -34,7 +33,7 @@
                 <a class="portfolio-item" href="{% url 'account_login' %}">
                     <div class="caption">
                         <div class="caption-content">
-                            <div class="h2 btn btn-outline"style="color: #fff !important;">LOGIN</div>
+                            <div class="h2 btn btn-outline" style="color: #fff !important;">LOGIN</div>
                         </div>
                     </div>
                     <img class="img-fluid" src="{{ MEDIA_URL }}cars2-hero.jpg" alt="..." />
@@ -44,7 +43,7 @@
                 <a class="portfolio-item" href="{% url 'products' %}">
                     <div class="caption">
                         <div class="caption-content">
-                            <div class="h2 btn btn-outline"style="color: #fff !important;" >SHOP</div>
+                            <div class="h2 btn btn-outline" style="color: #fff !important;">SHOP</div>
                         </div>
                     </div>
                     <img class="img-fluid" src="{{ MEDIA_URL }}rat-hero.jpg" alt="..." />
@@ -54,7 +53,7 @@
                 <a class="portfolio-item" href="{% url 'contact' %}">
                     <div class="caption">
                         <div class="caption-content">
-                            <div class="h2 btn btn-outline"style="color: #fff !important; ">CONTACT</div>
+                            <div class="h2 btn btn-outline" style="color: #fff !important; ">CONTACT</div>
                         </div>
                     </div>
                     <img class="img-fluid" src="{{ MEDIA_URL }}dory.jpg" alt="..." />
@@ -65,6 +64,6 @@
 </section>
 {% endblock %}
 {% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript" src="{% static 'home/js/script.js' %}"></script>
+{{ block.super }}
+<script type="text/javascript" src="{% static 'home/js/script.js' %}"></script>
 {% endblock %}

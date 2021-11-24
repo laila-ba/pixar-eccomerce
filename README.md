@@ -490,3 +490,30 @@ The structure of my site is outlined below.
   - Within the order history, users are able to view their order number, the date and time of the purchase, the items and their quantity, and the order total.
   - Orders in the order history are shown in order from oldest to latest.
   - The users are able to click on a past order's confirmation number and it will take them to the checkout success page. However, they are displayed a message at the top of the screen alerting them that it is a past order.
+
+# Validators
+## HTML5
+<details>
+  <summary>Home - Pass</summary>
+  <img src="readme-docs/home-html-check.png">
+</details>
+<details>
+  <summary>Films - Pass</summary>
+  <img src="readme-docs/films-html-check.png">
+</details>
+<details>
+  <summary>Film Details - Pass</summary>
+  <img src="readme-docs/film-detail-html-check.png">
+</details>
+<details>
+  <summary>Shop - Pass</summary>
+  <img src="readme-docs/shop-html-check.png">
+</details>
+<details>
+  <summary>Product Details - Pass (1 warning advising for me to remove type attribute from script tag.)</summary>
+  <img src="readme-docs/product-detail-html-check.png">
+</details>
+<details>
+  <summary>Log In - Pass</summary>
+  <img src="readme-docs/login-html-check.png">
+</details>

@@ -13,7 +13,7 @@
     {% endblock %}
 
     <title>Pixar Animation Studios</title>
-    <link rel="icon" type="image/x-icon" img src="{{ MEDIA_URL }}lamp.png" />
+    <link rel="icon" type="image/x-icon" href="{{ MEDIA_URL }}lamp.png" />
 
     {% block corejs %}
     <script src="https://js.stripe.com/v3/"></script>
@@ -53,7 +53,7 @@
                         <a class="nav-link" style="color: #000;" aria-current="page" href="{% url 'films' %}">FILMS</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" style="color: #000;" href="{% url 'products' %}" id="navbarDropdownMenuLink" role="button"
+                        <a class="nav-link dropdown-toggle" style="color: #000;" href="{% url 'products' %}"  role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             SHOP
                         </a>
@@ -74,11 +74,11 @@
                         {% if request.user.is_superuser %}
                         <a href="{% url 'add_product' %}" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" class="dropdown-item">PRODUCT MANAGMENT</a>
                         {% endif %}
-                        <a href="{% url 'profile' %}" class="dropdown-item"style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" >MY PROFILE</a>
+                        <a href="{% url 'profile' %}" class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;" >MY PROFILE</a>
                         <a href="{% url 'account_logout' %}" class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;">LOGOUT</a>
                         {% else %}
                         <a href="{% url 'account_signup' %}" class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;">REGISTER</a>
-                        <a href="{% url 'account_login' %}" class="dropdown-item"style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;">LOGIN</a>
+                        <a href="{% url 'account_login' %}" class="dropdown-item" style ="font-family: sans-serif; letter-spacing: 4px; font-size: 0.8rem;font-weight:700;">LOGIN</a>
                         {% endif %}
                       </ul>
                   </li>
@@ -131,19 +131,19 @@
     {% block footer %}
     <footer>
        <div class="text-center wrapper">
-        <a href="https://www.facebook.com/Pixar/"class="icon facebook">
+        <a href="https://www.facebook.com/Pixar/" class="icon facebook">
           <div class="tooltip">Facebook</div>
           <span><i class="fab fa-facebook-f"></i></span>
         </a>
-        <a href="https://twitter.com/Pixar?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"class="icon twitter">
+        <a href="https://twitter.com/Pixar?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="icon twitter">
           <div class="tooltip">Twitter</div>
           <span><i class="fab fa-twitter"></i></span>
         </a>
-        <a href="https://www.instagram.com/pixar/"class="icon instagram">
+        <a href="https://www.instagram.com/pixar/" class="icon instagram">
           <div class="tooltip">Instagram</div>
           <span><i class="fab fa-instagram"></i></span>
         </a>
-        <a href="https://www.youtube.com/channel/UC_IRYSp4auq7hKLvziWVH6w"class="icon youtube">
+        <a href="https://www.youtube.com/channel/UC_IRYSp4auq7hKLvziWVH6w" class="icon youtube">
           <div class="tooltip">Youtube</div>
           <span><i class="fab fa-youtube"></i></span>
         </a>
