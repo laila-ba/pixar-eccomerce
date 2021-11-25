@@ -38,9 +38,11 @@
                         <tr>
                             <td class="p-3 w-25">
                                 {% if item.product.image %}
-                                <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                <img class="img-fluid rounded" src="{{ item.product.image.url }}"
+                                    alt="{{ item.product.name }}">
                                 {% else %}
-                                <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                                <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png"
+                                    alt="{{ item.product.name }}">
                                 {% endif %}
                             </td>
                             <td class="py-3">
@@ -50,15 +52,17 @@
                                 </p>
                                 <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                             </td>
-                            
+
                             <td class="py-3 w-25">
-                                <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
+                                <form class="form update-form" method="POST"
+                                    action="{% url 'adjust_bag' item.item_id %}">
                                     {% csrf_token %}
                                     <div class="form-group">
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <button class="decrement-qty btn btn-sm rounded-0"
-                                                    data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                                    data-item_id="{{ item.item_id }}"
+                                                    id="decrement-qty_{{ item.item_id }}">
                                                     <span>
                                                         <i class="fas fa-minus fa-sm"></i>
                                                     </span>
@@ -69,7 +73,8 @@
                                                 data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
                                             <div class="input-group-append">
                                                 <button class="increment-qty btn btn-sm  rounded-0"
-                                                    data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                                    data-item_id="{{ item.item_id }}"
+                                                    id="increment-qty_{{ item.item_id }}">
                                                     <span>
                                                         <i class="fas fa-plus fa-sm"></i>
                                                     </span>
@@ -87,7 +92,7 @@
                                     style="color: #fff !important; background-color: red !important; margin-top:0.6rem; border-color:#fff !important; font-size:0.7rem;border-radius:50px;"
                                     id="remove_{{ item.item_id }}"
                                     data-product_size="{{ item.size }}"><small>Remove</small></a>
-                                    
+
                             </td>
                             <td class="py-3">
                                 <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
@@ -101,7 +106,8 @@
                                 <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
                                 {% if free_delivery_delta > 0 %}
                                 <p class="mb-1 text-danger">
-                                    You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong>
+                                    You could get free delivery by spending just
+                                    <strong>${{ free_delivery_delta }}</strong>
                                     more!
                                 </p>
                                 {% endif %}
@@ -109,7 +115,8 @@
                         </tr>
                         <tr>
                             <td colspan="5" class="text-right">
-                                <a href="{% url 'products' %}" class="btn btn-outline"style="border-radius:50px;color:#4CB3FF; border-color:#4CB3FF;margin-bottom:1rem;">
+                                <a href="{% url 'products' %}" class="btn btn-outline"
+                                    style="border-radius:50px;color:#4CB3FF; border-color:#4CB3FF;margin-bottom:1rem;">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
@@ -127,18 +134,19 @@
                     </table>
                 </div>
             </div>
-                {% else %}
-                <img class=" img-fluid rounded mx-auto d-block" src="{{ MEDIA_URL }}sad.png" alt="boo" />
-                <p class="text-center " style="font-family: sans-serif;  font-size: 2rem; font-weight:700;">Hey You!</p>
-                <p class="text-center lead mb-5" style="margin-bottom: 20px !important;">Looks like your bag is empty right
-                    now.</p>
-                <div class="text-center">
-                    <a href="{% url 'products' %}" class=" btn btn-outline-primary"
-                        style="color: #fff !important; background-color: #4CB3FF!important; border-color:#fff !important;border-radius: 50px; font-size: 1.5rem;margin-bottom: 2rem;">Shop</a>
-                </div>
-                {% endif %}
+            {% else %}
+            <img class=" img-fluid rounded mx-auto d-block" src="{{ MEDIA_URL }}sad.png" alt="boo" />
+            <p class="text-center " style="font-family: sans-serif;  font-size: 2rem; font-weight:700;">Hey You!</p>
+            <p class="text-center lead mb-5" style="margin-bottom: 20px !important;">Looks like your bag is empty right
+                now.</p>
+            <div class="text-center">
+                <a href="{% url 'products' %}" class=" btn btn-outline-primary"
+                    style="color: #fff !important; background-color: #4CB3FF!important; border-color:#fff !important;border-radius: 50px; font-size: 1.5rem;margin-bottom: 2rem;">Shop</a>
             </div>
+            {% endif %}
         </div>
+    </div>
+</div>
 {% endblock %}
 </div>
 {% block postloadjs %}

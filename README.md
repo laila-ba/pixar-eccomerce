@@ -375,9 +375,13 @@ The structure of my site is outlined below.
     - The *'edit a product'* page allows the admin to edit a product in any aspect. The category, sku, name, description, sizes, price,rating and image can all be edited and changed from the shop page.
     - Products can be deleted by the admin from the products page. Besides every product, is two button links: 'edit' and 'delete'
 
+  - ### Contact
+    - A form displayed on the page where the users can fill in the information asked and send their message to the site Admin
+
   ### Future Features to Add
     - Add different type of delivery options to chose from other than a default delivery.
     - Add an apple pay option to payements
+    - Admin can recieve messages sent from site users from contact page into desired email.
 
 # Testing
 ## Functionality
@@ -491,6 +495,14 @@ The structure of my site is outlined below.
   - Orders in the order history are shown in order from oldest to latest.
   - The users are able to click on a past order's confirmation number and it will take them to the checkout success page. However, they are displayed a message at the top of the screen alerting them that it is a past order.
 
+- ### Contact Page
+  - The contact page can be found on the botton of the home page and when the user clicks on the image with the text 'contact', they are redirected to the contact page.
+  - The user can fill in their full name, email address, and message within a form.
+  - There are are two buttons at the bottom of the page: 'cancel' and 'send'.
+  - The user can only click send once all fields are filled in within the form.
+  - Once the send button is clicked alongside a vlide form, the user sees a pop up message confirming that their message has been sent and they are then redirected back to the home page.
+  - If the uses clicks on the 'cancel' button, they are redirected to the home page and no further action is taken.
+
 # Validators
 ## HTML5
 <details>
@@ -516,4 +528,24 @@ The structure of my site is outlined below.
 <details>
   <summary>Log In - Pass</summary>
   <img src="readme-docs/login-html-check.png">
+</details>
+<details>
+  <summary>Register - Pass</summary>
+  <img src="readme-docs/signup-html-check.png">
+</details>
+<details>
+  <summary>Bag - Pass</summary>
+  <img src="readme-docs/bag-html-check.png">
+</details>
+<details>
+  <summary>Checkout Success- Pass</summary>
+  <img src="readme-docs/success-html-check.png">
+</details>
+<details>
+  <summary>Checkout- Pass (2 warnings advising for me to remove type attribute from script tag.)</summary>
+  <img src="readme-docs/checkout-html-check.png">
+</details>
+<details>
+  <summary>Contact- Pass </summary>
+  <img src="readme-docs/contact-html-checker.png">
 </details>

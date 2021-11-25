@@ -13,23 +13,28 @@
         <div class="container">
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
-              <h3 class="login-heading mb-4 text-uppercase"style="color: #4CB3FF;font-family: 'Josefin Sans', sans-serif; ">JOIN US!</h3>
-                <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+              <h3 class="login-heading mb-4 text-uppercase"
+                style="color: #4CB3FF;font-family: 'Josefin Sans', sans-serif; ">JOIN US!</h3>
+              <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign
+                  in</a>.{% endblocktrans %}</p>
 
-                <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-                  {% csrf_token %}
-                  {{ form|crispy }}
-                  {% if redirect_field_value %}
-                  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-                  {% endif %}
-                  <a class="btn btn-outline" style="color: #fff !important; background-color: #4CB3FF !important; border-color:#fff !important;border-radius:50px;"href="{% url 'account_login' %}">Back to Login</a>
-                  <button type="submit" class="text-uppercase"style="color: #4CB3FF !important; background-color: #fff !important; border-color: #4CB3FF!important;border-radius:50px;">{% trans "Sign Up" %}</button>
-                </form>
-              </div>
+              <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+                {% csrf_token %}
+                {{ form|crispy }}
+                {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                {% endif %}
+                <a class="btn btn-outline"
+                  style="color: #fff !important; background-color: #4CB3FF !important; border-color:#fff !important;border-radius:50px;"
+                  href="{% url 'account_login' %}">Back to Login</a>
+                <button type="submit" class="text-uppercase"
+                  style="color: #4CB3FF !important; background-color: #fff !important; border-color: #4CB3FF!important;border-radius:50px;">{% trans "Sign Up" %}</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-{% endblock %}
+  </div>
+  {% endblock %}
 </div>

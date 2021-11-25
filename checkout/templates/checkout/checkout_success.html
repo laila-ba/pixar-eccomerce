@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block page_header %}
@@ -12,12 +12,12 @@
             <div class="col"></div>
         </div>
     </div>
-{% endblock %}
+    {% endblock %}
 
-{% block content %}
-    <div class="container" >
+    {% block content %}
+    <div class="container">
         <div class="row">
-            <div class="col"style="margin-top:8rem;">
+            <div class="col" style="margin-top:8rem;">
                 <img class=" img-fluid rounded mx-auto d-block" src="{{ MEDIA_URL }}thanks.png" alt="" />
             </div>
         </div>
@@ -25,7 +25,8 @@
         <div class="row card1">
             <div class="col-12 col-lg-7 mx-auto">
                 <div class="order-confirmation-wrapper p-2 ">
-                    <p class="text-center text-black ">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
+                    <p class="text-center text-black ">Your order information is below. A confirmation email will be
+                        sent to <strong>{{ order.email }}</strong>.</p>
                     <div class="row">
                         <div class="col">
                             <small class="text-muted"><strong>Order Info:</strong></small>
@@ -60,7 +61,8 @@
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="small mb-0 text-black font-weight-bold">
-                                {{ item.product.name }}{% if item.product_size %} - Size {{ item.product_size|upper }}{% endif %}
+                                {{ item.product.name }}{% if item.product_size %} - Size
+                                {{ item.product_size|upper }}{% endif %}
                             </p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
@@ -185,18 +187,22 @@
                             <p class="mb-0">{{ order.grand_total }}</p>
                         </div>
                     </div>
-                {% if from_profile %}
-                    <a href="{% url 'profile' %}" class="rounded-0 my-2"margin-bottom:2rem;>
-                        <span class="text-uppercase btn btn-outline"style="margin-bottom:2rem; border-radius:50px; margin-top: 1rem; background-color:#4CB3FF; color: #fff;">Back To Profile</span>
+                    {% if from_profile %}
+                    <a href="{% url 'profile' %}" class="rounded-0 my-2" margin-bottom:2rem;>
+                        <span class="text-uppercase btn btn-outline"
+                            style="margin-bottom:2rem; border-radius:50px; margin-top: 1rem; background-color:#4CB3FF; color: #fff;">Back
+                            To Profile</span>
                     </a>
-                {% else %}
+                    {% else %}
                     <a href="{% url 'products' %}" class="rounded-0 my-2">
-                        <span class="text-uppercase btn btn-outline"style="margin-bottom:2rem; border-radius:50px; margin-top: 1rem; background-color:#4CB3FF; color: #fff;">Keep Shopping</span>
+                        <span class="text-uppercase btn btn-outline"
+                            style="margin-bottom:2rem; border-radius:50px; margin-top: 1rem; background-color:#4CB3FF; color: #fff;">Keep
+                            Shopping</span>
                     </a>
-                {% endif %}
+                    {% endif %}
                 </div>
             </div>
         </div>
     </div>
-{% endblock %}
+    {% endblock %}
 </div>
