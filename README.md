@@ -549,3 +549,16 @@ The structure of my site is outlined below.
   <summary>Contact- Pass </summary>
   <img src="readme-docs/contact-html-checker.png">
 </details>
+
+## CSS
+
+- #### Checkout.css- Pass
+
+- #### Contact.css- Pass
+
+- #### Profile.css- Pass
+
+- <details>
+  <summary>Base.css- Pass (NOTE: When validating base.css, the validator returned 1 error associated with not recognizing variables in linear gradient. If variables were overwritten by regular color names, the validator passes.)</summary>
+  <img src="readme-docs/color.png">
+</details>
