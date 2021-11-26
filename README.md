@@ -65,7 +65,6 @@ FEATURES IMAGE
     - I want to be able to easily register for an account and view my profile when logged in.
     - I want ot be able to Easily login and logout
     - Recover my password easily to access my account incase i forget my password.
-    - Recieve an email confirmation after registering
     - View my order history, order confirmations and save payement information in my profile.
 
 
@@ -562,3 +561,95 @@ The structure of my site is outlined below.
   <summary>Base.css- Pass (NOTE: When validating base.css, the validator returned 1 error associated with not recognizing variables in linear gradient. If variables were overwritten by regular color names, the validator passes.)</summary>
   <img src="readme-docs/color.png">
 </details>
+
+## JSHINT
+
+- #### Countryfield.js - Pass
+
+- #### Home/script.js - Pass
+
+- #### Contact.js - Pass
+
+- #### Stripe_Elements.js - Pass
+
+# Compatibilty
+- Browser Compatibility:
+
+TABLE IMAGE**
+
+- The devices that were used during testing were: iPad pro, iPhone 12, iPhone 12 mini, windows desktops with 27" screens, Dell Laptop and vaious andriod devices.
+- Responsively was used to view my site from vaious different devices simultaniousley, helping me spot errors. The different devices varied from  Galaxy Fold (280px) to large Desktop ViewPorts.
+
+# Performance Testing - User Stories
+- ### Shopper Stories
+
+  1. I want to view all the products that are available to buy in order to purchase them.
+      - All available products are able to be viewed on the Shop page and can be filtered. The shop page is accessible from the navigation bar and the Shop image at the bottom of the Home page.
+
+  2. I want to be able to view an individual item's details including: price, description, rating, image, available sizes and category
+      - Users can view a products deatils easily by clicking on the products image and they are instantly redirected to the product details page. The page displays the product image on the left side and the product title, price, category, rating, sizes and description on the other side.
+
+  3. I want to be able to see the total of my bag at any time in order to avoid spending much and keep updated.
+      - The total of the shoppers bag is always visible on the navigation bar, underneath the bag icon. On mobile view, this is still visible, however, the shopper must open the hamburger menu to view the bags total.
+      - When a user adds an itm to their bag, it is added to the bag and a notification appears letting the user know it is in their bag.
+
+  4. I want to easily be able to sort and filter the available products across all/specific categories, identifying the best rated, best priced and alphabetically sorted.
+      - On the shop page, where all available porducts are listed, there is a sort button below the search bar which reveals sorting buttons that sort selected items by added date, price, or alphabetical order. If the filter button is clicked again, the sorting buttons disappear.
+
+  5. I want to easily acces a specific category of available products.
+      - Users can easily access specific categories through the navigation bar, within the Shop dropdown. All categories are listed there, including an option for all categories to be dispayed.
+
+  6. Search for a product by name or description to quickly see if its available.
+      - Within the shop page, the search bar is visible  to allow users to search for the items that they are looking for.
+      - When the user enteres in a search criteria and presses search, the page refreshes and auto scrolls down to the section of found products.
+  
+  7. I want to easily select available size and qauntity of product.
+      - Within the product details page, it includes the avaiblable sizes for the user to chose from and a quantity toggle button that increases and decreases when the user clicks -/+.
+      - Users can also chose their desired sizes here.
+
+  8. I want to View items in my bag before purchasing.
+      - The user is able to view a simmary of their chosen items in the bag page before the checkout. 
+  
+  9. I want to Adjust or delete quantity of items in my bag.
+      - Users are able to easily adjust and delete items from their bag. When the quantity toggle +/- button is clicked on, the quantity changes and when the user clicks on the 'update' button, the quantity is updated.
+      - Users can also remove items from their basket when the 'remove' button is clicked.
+
+  10. I want to enter payement information easily without hassle and feel safe and secure doing so.
+      - Payments are handled by Stripe, securely, they are encrypted and card details are not shared with anyone.
+
+  11. I want to view an order confirmation automatically after checkout is successful.
+      - Shoppers are redirected to the checkout success page once their payament has gone through successfully. They can then see their order details and confirmation email has been sent.
+
+  12. I want to recieve an order confirmation email after checking out to keep in records.
+      - Order history is sent automatically after a payement has been successful. Order confirmation is displayed on the screen as well.
+  
+  - ### Site User Stories
+    1. I want to be able to easily register for an account and view my profile when logged in.
+        - The user is able to register and become a member by clicking on the register button from the main nav bar dropdown as they are directed to the register form page.
+        - Register page only need the user's e-mail, username, and password.
+        - E-mail verification arrives almost instantly so the user doesnt have to wait a long time.
+        - Once the users have verified their email, they can log in straight away and view their profile.
+
+    2. I want ot be able to Easily login and logout.
+        - Users can navigate to login and logout easily through the navigation bar.
+
+    3. Recover my password easily to access my account incase i forget my password.
+        - Users can recover their password by clicking on the 'forgot password' link. They are then asked to enter their email adress and an email is sent instantly for them to recover their password.
+
+    4. View my order history, order confirmations and save payement information in my profile.
+        - Logged in user can access their Order history page from their profile.
+        - The users are able to click on a past order's confirmation number and it will take them to the checkout success page. However, they are displayed a message at the top of the screen alerting them that it is a past order.
+  
+   - ### Store management Stories
+    1. Add new items to the store easily.
+        - The admin can add new items through the  'add a product' page that allows the admin to fill out a form to add a product to appear in the products page and for shoppers to be able to purchase it. The admin can create a description, rating, price title, category, sizes, image url or upload an image from their local device.
+
+    2. Edit and update existing products to change pricing, description images, and other criteria.
+        - The admin can edit items through the 'edit a product' page that allows the admin to edit a product in any aspect. The category, sku, name, description, sizes, price,rating and image can all be edited and changed from the shop page.
+
+    3. Delete items that are no longer for sale.
+        - The admin is able to delete products that are no longer availabe through the shop page by clicking on the 'delete' button bellow every product on the page.
+
+# Bugs
+
+
