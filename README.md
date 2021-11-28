@@ -1,30 +1,9 @@
-MAIN IMAGE
+<img src="readme-docs/README-hero.png">
 
-[Live Site](https://pixar-ecommerce.herokuapp.com/)
 
 # About
 
-This website is based off of the one and only, Disney Pixar site. Ive always been a fan of Pixar's website as its simple, sleek and minimal while still bringing in their touch of magic and nostalgia from their films. 
-
-# Table of Contents
-
-
-1. - [User Experience](#UX)
-        - [The Strategy Plane](##The-Strategy-Plane)
-        - [User Stories](###User-Stories)
-    
-    ii. [The Scope Plane](## The Scope Plane)
-    iii. [The Structure Plane](## The Structure Plane)
-    iv. [The Skeleton Plane](## The Skeleton Plane)
-        - [Wireframes]()
-    v. [The Surface Plane](## The Surface Plane)
-        - [Mockups]()
-        - [Color Scheme](### Color Scheme)
-        - [Typography](### Typography)
-
-2. [Features](# Features)
-    - [Features Accross The Site](## Features Accross The Site)
-    - [Features Specific To Pages](## Features Specific To Pages)
+This website is based off of the one and only, Disney Pixar site. Ive always been a fan of Pixar's website as its simple, sleek and minimal while still bringing in their touch of magic and nostalgia from their films. The [Live Site](https://pixar-ecommerce.herokuapp.com/) can be viewed here.
 
 
 # The Strategy Plane
@@ -43,7 +22,7 @@ Pixar's film taget audience are very wide as its a universal studio that everyon
 
 As part of the planning process for the strategy plane, i find it helpful to plan out which features are of most importance to include in the project on a small scale of 1-3 (3 being the most important.) By doing this technique, i am able to focus more on the higher ranked features and work my way down the table.
 
-FEATURES IMAGE
+<img src="readme-docs/features.png">
 
 ## User Stories
 
@@ -74,12 +53,11 @@ FEATURES IMAGE
     - Delete items that are no longer for sale.
 
 ## The Scope Plane
-- ### The minimal Product for my project is an e-commerce site with the following features:
+- ### The minimal end Product for my project is an e-commerce site with the following features:
     - A payement system
     - A profile page
     - A products page
     - Authorization
-- Additional Features can be seen in the [Features]() section.
 
 ## The Structure Plane
 The structure of my site is outlined below.
@@ -122,13 +100,13 @@ The structure of my site is outlined below.
     - The profile.html template displays the user's profile to the user. It contain their saved delivery details and order history. This can only be seen by someone who has registered for an account.
     #### Profile Model - securely stores information on each user. This can be used in checkout to prefill the checkout form.
         user = models.OneToOneField(User, on_delete=models.CASCADE)
-    default_phone_number = models.CharField(max_length=20, null=True, blank=True)
-    default_street_address1 = models.CharField(max_length=80, null=True, blank=True)
-    default_street_address2 = models.CharField(max_length=80, null=True, blank=True)
-    default_town_or_city = models.CharField(max_length=40, null=True, blank=True)
-    default_county = models.CharField(max_length=80, null=True, blank=True)
-    default_postcode = models.CharField(max_length=20, null=True, blank=True)
-    default_country = CountryField(blank_label='Country', null=True, blank=True)
+        default_phone_number = models.CharField(max_length=20, null=True, blank=True)
+        default_street_address1 = models.CharField(max_length=80, null=True, blank=True)
+        default_street_address2 = models.CharField(max_length=80, null=True, blank=True)
+        default_town_or_city = models.CharField(max_length=40, null=True, blank=True)
+        default_county = models.CharField(max_length=80, null=True, blank=True)
+        default_postcode = models.CharField(max_length=20, null=True, blank=True)
+        default_country = CountryField(blank_label='Country', null=True, blank=True)
 
 - ### Contact app 
     #### HTML files
@@ -205,7 +183,7 @@ The structure of my site is outlined below.
 </details>
 <details>
   <summary>Add product(Admin) </summary>
-  <img src="readme-docs/add.png">
+  <img src="readme-docs/Add.png">
 </details>
 <details>
   <summary>Checkout </summary>
@@ -219,7 +197,9 @@ The structure of my site is outlined below.
   <summary>Bag</summary>
   <img src="readme-docs/bag.png">
 </details>
-    
+
+ ---   
+
 ## Mockups
     
 <details>
@@ -252,7 +232,7 @@ The structure of my site is outlined below.
 </details>
 <details>
   <summary>Product Details</summary>
-  <img src="readme-docs/product-details-m.png">
+  <img src="readme-docs/product details-m.png">
 </details>
 <details>
   <summary>Add Product(Admin)</summary>
@@ -264,7 +244,7 @@ The structure of my site is outlined below.
 </details>
 <details>
   <summary>Checkout Success</summary>
-  <img src="readme-docs/checkout-success-m.png">
+  <img src="readme-docs/checkout success-m.png">
 </details>
 <details>
   <summary>Bag</summary>
@@ -275,17 +255,17 @@ The structure of my site is outlined below.
 - ## Color Scheme
   - The color scheme chosen for this project is simple, branching from one primary color: Blue. As the site mainly consists of vibrant images, i thought sticking to various shades of blue would go veyr nicely.
     
-    COLOR SCHEME IMAGE
+    <img src="readme-docs/color2.png">
 
 - ## Typography
   - This site uses a variation of two different fonts: Josephin sans & sans-serif.  I chose these two fonts as i took time to compare the fints used on the Pixar site and find something a little similar. I found that when adding letter spacing to these two fonts, it enahnced the simplicity of the site while still appearing similar to the Pixar site.
 
-  TYPO IMAGE
+    <img src="readme-docs/typo.png">
 
 - ## Imagery
   - Imagery is a huge part of the site and is critical to the users as Pixar fans are most appreciative of the clean and shiny graphics. Its used for both informative and entertainmenet purposes as images are displayed in item cards on the products template to allow users to visually engage with items and decide if they are interested to purchase. Images are also shown for aesthetic to bring in the magical and nostalgic feel that Pixar films have.Background images are used a lot throughout the site, the main one being Disney's famous blue sky thats used for their logo and intro to their films. I felt that by encourporating this in images, (as Pixar is one of Disney's brances) and making the colours a part of my site, it enhances the magical, nostalgic theme that my site gives off. I have made sure encorporated atleast one image on every page to keep the feel ongoing throught the site. Product images have been taken from the Disney Site and others have been created and edited through Canva.
 
-  IMAGERY IMAGE
+    <img src="readme-docs/imagery.png">
 
 # Features
 ## Common Features Across All Pages
@@ -575,7 +555,7 @@ The structure of my site is outlined below.
 # Compatibilty
 - Browser Compatibility:
 
-TABLE IMAGE**
+  <img src="readme-docs/table.png">
 
 - The devices that were used during testing were: iPad pro, iPhone 12, iPhone 12 mini, windows desktops with 27" screens, Dell Laptop and vaious andriod devices.
 - Responsively was used to view my site from vaious different devices simultaniousley, helping me spot errors. The different devices varied from  Galaxy Fold (280px) to large Desktop ViewPorts.
@@ -651,5 +631,129 @@ TABLE IMAGE**
         - The admin is able to delete products that are no longer availabe through the shop page by clicking on the 'delete' button bellow every product on the page.
 
 # Bugs
+## Identified Bugs
+  1. ### My toast messages were not appearing when adding items to the bag. 
+  <img src="readme-docs/toast-before.png">
+
+  - My messages were not being triggered for items with no sizes, meaning when items of clothing were added to the basket, no toasts were appearing.
+  - I added the following code in order for sized items to also trigger toasts: 
+
+            if size:
+            if item_id in list(bag.keys()):
+                if size in bag[item_id]['items_by_size'].keys():
+                    bag[item_id]['items_by_size'][size] += quantity
+                    messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {bag[item_id]["items_by_size"][size]}')
+                else:
+                    bag[item_id]['items_by_size'][size] = quantity
+                    messages.success(request, f'Added size {size.upper()} {product.name} to your bag')
+            else:
+                bag[item_id] = {'items_by_size': {size: quantity}}
+                messages.success(request, f'Added size {size.upper()} {product.name} to your bag')
+        else:
+            if item_id in list(bag.keys()):
+                bag[item_id] += quantity
+                messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+            else:
+                bag[item_id] = quantity
+                messages.success(request, f'Added {product.name} to your bag')
+
+            
+  2. ### When i checkout a bag with items, the success message appears in the console and the payment goes through to stripe, but i get an error saying " 'AnonymousUser'   object is not iterable"
+
+        - I realised that within my view, i was not checking whether the user is authenticated when saving profile data. I added the following if statement to the code that fixed the bug: 
+
+        if request.user.is_authenticated:
+        profile = UserProfile.objects.get(user=request.user)
+        order.user_profile = profile
+        order.save()
+
+  3. ### When trying to push to Herkoku, i got the following error: 
+
+        main -> main (shallow update not allowed)
+        error: failed to push some refs to 'https://git.heroku.com/pixar-ecommerce.git'
+
+  - I then noticed that the Procfile wasnt matching the WSGI_APPLICATION value in settings.py:
+
+    <img src="readme-docs/proc.png">
+
+  - After changing up the typo to the correct matching spelling, the error was fixed.
+
+  4. ### My webhook handlers were failing with a 404 error and failed stripe webhooks
+      - I took a close look into the webhooks.py file and after some time, realised that the return statement in webhooks.py is causing the problem.With that return on line 37, the webhook handler never gets to process the webhook. There only needs to be a return response at the bottom of the file. Once removing this, the bug was fixed.
+
+       <img src="readme-docs/webhook.png">
+
+# Existing Bugs
+
+  - The quantity toggle button on the products details page can be changed through changing the HTML in the dev tools. E.g: the maximum amount a shopper can choose is 10, however this can be overwritten through the dev tools. This will be fixed in future versions.
+
+  - Website not loading on iamresponsive. I recieved an x-frame error and the site would not load.
+
+# Technologies used
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
+* [JavaScript](https://www.javascript.com/)
+* [Python](https://www.python.org/)
+* [Pip3](https://pip.pypa.io/en/stable/)- install packages to python
+* [Git](https://git-scm.com/)- version control
+* [GitHub](https://github.com/)- host project files
+* [Gitpod](https://www.gitpod.io/)- coding enviroment
+* [Django](https://www.djangoproject.com/)- main framework for project
+* [Heroku](https://id.heroku.com/login)- cloud platform
+* [Django Crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/)- displays forms
+* [Stripe](https://stripe.com/gb) - used as secure payement system
+* [AWS](https://aws.amazon.com/) - Used to store static files
+* [Bootstrap 5](https://getbootstrap.com/) - Used for responsiveness
+* [Font Awsome](https://fontawesome.com/) - Used for icons such as footer
+* [Figma](https://www.figma.com/) - Used for mockups ad wireframes
+* [Canva](https://www.canva.com/en_gb/) - Used for created custom images
+
+# Deployment
+
+1. Within the project repository, You can either:
+    - Download the files by clicking on 'Code' and then 'Download Zip'
+
+      <img src="readme-docs/zip.png">
+
+    ### OR..
+
+    - Clone the repository by running the following command from your IDE
+
+          gh repo clone laila-ba/pixar-eccomerce
+    
+2. After doing this, within your chosen IDE, make sure you are inside the project folder by using 
+
+           cd The/Project/Folder/Path
+
+3. Activate virtual enviroment:
+    - Python's venv source 
+            .venv/bin/activate
+    
+    - Using Windows and MacOS, .venv is the name you gave previously
+
+4. Intsall all reqauirements from requirements.txt file
+
+          pip3 install -r requirements.txt
+  - After thhis, create a file named 'env.py' to store all enviroment variables like so:
+
+            os.environ.setdefault('SECRET_KEY', '<your-variable-goes-here>')
+            os.environ.setdefault('DEVELOPMENT', '1')
+            os.environ.setdefault('ALLOWED_HOSTS', '<your-variable-goes-here>')
+            os.environ.setdefault('STRIPE_PUBLIC_KEY', '<your-variable-goes-here>')
+            os.environ.setdefault('STRIPE_SECRET_KEY', '<your-variable-goes-here>')
+            os.environ.setdefault('STRIPE_WH_SECRET_CH', '<your-variable-goes-here>')
+            os.environ.setdefault('STRIPE_WH_SECRET_SUB', '<your-variable-goes-here>')
+  - Lastly run the app with:
+
+             python3 manage.py runserver
+
+# Credits
+- [neumorphism-generator](https://hype4.academy/tools/neumorphism-generator) for cards used in the project
+- Product Images taken from [Disney](https://www.shopdisney.co.uk/)
+
+
+
+
 
 
