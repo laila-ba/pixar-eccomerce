@@ -4102,7 +4102,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #4382FF;
+  color: #4CB3FF;
 }
 .nav-link.disabled {
   color: #000;
@@ -12344,7 +12344,7 @@ footer{
   margin-left: auto;
   margin-right: auto;
   bottom:0;
-  width:100%;
+  width:80%;
   position: relative;
   height:2.5rem;   /* Height of the footer */
 }
