@@ -750,6 +750,35 @@ The structure of my site is outlined below.
 
              python3 manage.py runserver
 
+# Remote Deployment
+
+1. Set up a [Heroku](https://www.heroku.com/) account and create a new app.
+2. Within variables, set a SECRET_KEY === (your django secret key)
+3. Within *Resources*, search in *Heroku Postgres*.
+4. Set a variable in your IDE as: DATABASE_URL equal to (which you can find in your heroku app variables.)
+5. Ensure that you have a  Procfile and a requirements.txt created with *web: gunicorn .wsgi:application* in the procfile.
+6. Run the command line python3 manage.py migrate to set up the database
+7. Create a superuser that will be used to access the admin page as well as to manage the database. Enter username, password, and e-mail as required
+
+             python3 manage.py createsuperuser
+8. Add, commit and push your changes up to GitHub
+9. Ensure all the following variables are set in heroku:
+
+              AWS_ACCESS_KEY_ID	<your_aws_access__key>
+              AWS_SECRET_ACCESS_KEY	<your_aws_secret_access_key>
+              DATABASE_URL	<generated automatically>
+              EMAIL_HOST_PASS	<your_email_key>
+              EMAIL_HOST_USER	<your_email>
+              SECRET_KEY	<your_secret_key>
+              STRIPE_PUBLIC_KEY	<your_stripe_public_key>
+              STRIPE_SECRET_KEY	<your_stripe_secret_key>
+              STRIPE_WH_SECRET_CH	<your_stripe_webhook_key>
+              STRIPE_WH_SECRET_SUB	<your_stripe_webhook_key>
+              USE_AWS	<True>
+              ALLOWED_HOSTS	<your-heroku-app-url>
+
+10. At the top of the heroku site, click on *Deploy*. Choose automatic deploys to your Github account and repo name. Once this is done, you can open the app.
+
 # Credits
 - [neumorphism-generator](https://hype4.academy/tools/neumorphism-generator) for cards used in the project
 - Product Images and product descriptions taken from [Disney](https://www.shopdisney.co.uk/)
