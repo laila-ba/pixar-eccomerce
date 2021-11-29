@@ -5,6 +5,8 @@
 
 This website is based on the one and only, Disney Pixar site. I've always been a fan of Pixar's website as it's simple, sleek, and minimal while still bringing in their touch of magic and nostalgia from their films. The [Live Site](https://pixar-ecommerce.herokuapp.com/) can be viewed here.
 
+* ### NOTE: MOST IMAGES AND TEXT HAVE BEEN TAKEN FROM DISNEY PIXAR*
+
 
 # The Strategy Plane
 
@@ -750,4 +752,4 @@ The structure of my site is outlined below.
 
 # Credits
 - [neumorphism-generator](https://hype4.academy/tools/neumorphism-generator) for cards used in the project
-- Product Images taken from [Disney](https://www.shopdisney.co.uk/)
+- Product Images and product descriptions taken from [Disney](https://www.shopdisney.co.uk/)
